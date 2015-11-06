@@ -4,12 +4,9 @@
 
 ------------------
 
-
 **b4st is a simple WordPress starter theme loaded with Bootstrap 4.**
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
-
-This theme has been built for use as a starter theme and as a learning aid for people who wish to get into WordPress theme design.
 
 ##Features of b4st
 
