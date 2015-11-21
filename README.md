@@ -6,7 +6,7 @@
 
 **b4st is a simple WordPress starter theme loaded with Bootstrap 4.**
 
-> **NOTE:** Bootstrap v4.0.0 alpha is in the `dist/` folder. When it is updated, you can simply swap for a newer Bootstrap `dist/` folder.
+> **NOTE:** Bootstrap v4.0.0 alpha is in the `dist/` folder. When Bootstrap is updated, you can simply swap for a newer `dist/` folder.
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -14,10 +14,10 @@
 
 * Simple, intuitive, clean code.
 * CSS, JS, functions and loops are organized into different folders.
-* Bootstrap 4.0.0 alpha – included CSS and JS enqueued.
-* jQuery 2.1.4 (served by cdnjs.com  CDN) enqueued.
-* Font Awesome (served by cdnjs.com CDN) enqueued.
-* Modernizr 2.8.3 (served by cdnjs.com CDN) enqueued.
+* **Bootstrap 4.0.0 alpha** – included CSS and JS enqueued.
+* **jQuery 2.1.4* (served by cdnjs.com  CDN) enqueued.
+* **Font Awesome** (served by cdnjs.com CDN) enqueued.
+* **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 * A starter CSS theme – `/theme/css/b4st.css`, enqueued.
 * WordPress menu and WordPress search form in the Bootstrap 4 `.navbar` (Note: Bootstrap 4.0.0 supports only one level of menu links (no navbar drop-downs).
 * Bootstrap pagination ( e.g. ` 1 | 2 | 3 | Older -> `) for Blog index and category pages.
