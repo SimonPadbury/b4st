@@ -15,7 +15,7 @@
 * Simple, intuitive, clean code.
 * CSS, JS, functions and loops are organized into different folders.
 * **Bootstrap 4.0.0 alpha** – included CSS and JS enqueued.
-* **jQuery 2.1.4* (served by cdnjs.com  CDN) enqueued.
+* **jQuery 2.1.4** (served by cdnjs.com  CDN) enqueued.
 * **Font Awesome** (served by cdnjs.com CDN) enqueued.
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 * A starter CSS theme – `/theme/css/b4st.css`, enqueued.
