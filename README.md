@@ -1,6 +1,6 @@
 #b4st - A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 1.1*
+*Version 1.2*
 
 ------------------
 
@@ -20,6 +20,7 @@
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 * A starter CSS theme – `/theme/css/b4st.css`, enqueued.
 * WordPress menu and WordPress search form in the Bootstrap 4 `.navbar` (Note: Bootstrap 4.0.0-alpha.2 supports only one level of menu links (no navbar drop-downs).
-* Bootstrap pagination ( e.g. ` 1 | 2 | 3 | Older -> `) for Blog index and category pages.
+* Bootstrap pagination for blog index and blog category pages.
+* Bootstrap pagination for posts/pages if split over a series of 'pages'.
 * Visual editor stylesheet – into which the same Bootstrap 4 and starter CSS theme are preloaded by `@import`, so that what you see in the visual editor is (mostly!) what you get at the front end (WYSI(M!)WYG). E.g. you will see the theme's typpography in the WordPress Post/Page editor, but its width will not be the same as your article column width in the front end.
 * [MIT licence](http://opensource.org/licenses/MIT) (open source).
