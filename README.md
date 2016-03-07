@@ -6,7 +6,7 @@
 
 **b4st is a simple WordPress starter theme loaded with Bootstrap 4.**
 
-> **NOTE:** Bootstrap v4.0.0-alpha.2 is in the `dist/` folder. When Bootstrap is updated, you can simply swap for a newer `dist/` folder.
+> **NOTE:** Bootstrap v4.0.0-alpha.2 is in the `dist/` folder. When Bootstrap is updated, you can simply swap for a newer `dist/` folder. But since Bootstrap v4 is still in alpha, they may yet change stuff that will require changes in the CSS classes in b4st.
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
