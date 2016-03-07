@@ -1,6 +1,6 @@
 #b4st - A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 1.2*
+*Version 1.2.1*
 
 ------------------
 
@@ -15,7 +15,7 @@
 * Simple, intuitive, clean code.
 * CSS, JS, functions and loops are organized into different folders.
 * **Bootstrap 4.0.0-alpha.2** – included CSS and JS enqueued.
-* **jQuery 2.1.4** (served by cdnjs.com  CDN) enqueued.
+* **jQuery** enqueued, from WordPress pre-registered onboard jQuery.
 * **Font Awesome** (served by cdnjs.com CDN) enqueued.
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 * A starter CSS theme – `/theme/css/b4st.css`, enqueued.
