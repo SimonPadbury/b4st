@@ -18,7 +18,7 @@
 * **jQuery** enqueued, served from the WordPress onboard (pre-registered) jQuery.
 * **Font Awesome** (served by cdnjs.com CDN) enqueued.
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
-* **Navbar with dropdowns (child menus)**. Note: Bootstrap 4.0.0-alpha2 does not have dropdown menus included in the [navbar](http://v4-alpha.getbootstrap.com/components/navbar/), therefore [dropdowns](http://v4-alpha.getbootstrap.com/components/dropdowns/) have been incorporated into the navbar. 
+* **Navbar with dropdowns (child menus)**. Note: Bootstrap 4.0.0-alpha2 does not have dropdown menus included in the [navbar](http://v4-alpha.getbootstrap.com/components/navbar/), therefore [dropdowns](http://v4-alpha.getbootstrap.com/components/dropdowns/) have been incorporated into the navbar and a [custom walker nav menu class](https://github.com/SimonPadbury/b4st/blob/master/functions/navbar.php) has been built to handle this. 
 * A starter CSS theme – `/theme/css/b4st.css`, enqueued.
 * WordPress menu and WordPress search form in the Bootstrap 4 `.navbar` (Note: Bootstrap 4.0.0-alpha.2 supports only one level of menu links (no navbar drop-downs).
 * Bootstrap pagination for blog index and blog category pages.
