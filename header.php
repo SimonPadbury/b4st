@@ -19,14 +19,15 @@
     <?php
         wp_nav_menu( array(
             'theme_location'		=> 'navbar',
-            'menu_class'				=> 'nav navbar-nav', 
-            'echo'							=> true,
+            'container'         => false,
+            'menu_class'				=> 'nav navbar-nav',
             'fallback_cb'				=> '__return_false',
           	'items_wrap'				=> '<ul id="%1$s" class="%2$s">%3$s</ul>',
-            'depth'							=> 1, 
+            'depth'							=> 2,
+						'walker'            => new b4st_walker_nav_menu()
         ) );
     ?>
-      <?php get_template_part('navbar-search'); ?>
+    <?php get_template_part('navbar-search'); ?>
   </div>
 </nav>
   

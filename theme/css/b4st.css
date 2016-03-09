@@ -1,6 +1,5 @@
-/*
-Max content widths
-*/
+/* Max content widths */
+
 .size-auto, 
 .size-full,
 .size-large,
@@ -10,12 +9,16 @@ Max content widths
 	height: auto
 }
 
-/*
-Navbar as top bar
-*/
+/* Navbar */
 
 .navbar-topbar {
   border-radius: 0;
+}
+
+.navbar .dropdown-menu li {
+  display: block;
+  width: 100%;
+  margin-left: 0 !important;
 }
 
 
@@ -30,12 +33,10 @@ If you require a Site title and a logo, an example of how to do this is provided
 }
 */
 
-/*
-Main content
-*/
+/* Main content */
 
 #content article {
-  margin-bottom: 40px
+  margin: 40px 0
 }
 #content header {
   margin: 20px 0
@@ -47,9 +48,7 @@ Main content
   padding-bottom: 20px
 }
 
-/*
-Sidebar
-*/
+/* Sidebar */
 
 .sidebar {
   margin-top: 20px
@@ -66,9 +65,7 @@ Sidebar
   margin: 10px 0
 }
 
-/*
-Hide form placeholders on focus
-*/
+/* Hide form placeholders on focus */
 
 input:focus::-webkit-input-placeholder { color: transparent; }
 input:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
@@ -77,9 +74,7 @@ textarea:focus::-webkit-input-placeholder { color: transparent; }
 textarea:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
 textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */ 
 
-/*
-Comments
-*/
+/* Comments */
 
 #respond {
   margin-top: 40px
@@ -137,9 +132,7 @@ ol.commentlist li ul {
   margin: 0
 }
 
-/*
-Site footer
-*/
+/* Site footer */
 
 .site-footer {
   padding: 40px 0

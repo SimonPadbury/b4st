@@ -23,10 +23,9 @@ if (have_comments()) : ?>
   <?php wp_list_comments('type=comment&callback=b4st_comment');?>
 </ol>
 
-<ul class="pagination">
-  <li class="older"><?php previous_comments_link() ?></li>
-  <li class="newer"><?php next_comments_link() ?></li>
-</ul>
+<p class="text-muted">
+  <?php paginate_comments_links( $args ) ?>
+</p>
 
 <?php
   else :
