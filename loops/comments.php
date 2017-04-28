@@ -24,7 +24,7 @@ if (have_comments()) : ?>
 </ol>
 
 <p class="text-muted">
-  <?php paginate_comments_links( $args ) ?>
+  <?php paginate_comments_links( $args ); ?>
 </p>
 
 <?php
