@@ -1,5 +1,5 @@
 <?php
- 
+
 // Do not delete this section
 if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])){
   die ('Please do not load this page directly. Thanks!'); }
@@ -8,23 +8,23 @@ if ( post_password_required() ) { ?>
     <?php _e('This post is password protected. Enter the password to view comments.', 'b4st'); ?>
   </div>
 <?php
-  return; 
+  return;
 }
 // End do not delete section
- 
+
 if (have_comments()) : ?>
 
 <h3><?php _e('Feedback', 'b4st'); ?></h3>
 <p class="text-muted" style="margin-bottom: 20px;">
  <i class="fa fa-comment-o"></i>&nbsp; <?php _e('Comments', 'b4st');  ?>: <?php comments_number(__('None', 'b4st'), '1', '%'); ?>
 </p>
-  
+
 <ol class="commentlist">
   <?php wp_list_comments('type=comment&callback=b4st_comment');?>
 </ol>
 
 <p class="text-muted">
-  <?php paginate_comments_links( $args ); ?>
+  <?php paginate_comments_links(); ?>
 </p>
 
 <?php
