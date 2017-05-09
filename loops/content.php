@@ -42,4 +42,4 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
   </ul>
 <?php } ?>
 
-<?php else: wp_redirect(get_bloginfo('siteurl').'/404', 404); exit; endif; ?>
+<?php else: wp_redirect(get_bloginfo('url').'/404', 404); exit; endif; ?>
