@@ -29,5 +29,5 @@ The Single Posts Loop
 <?php comments_template('/loops/comments.php'); ?>
 <?php endwhile; ?>
 <?php else: ?>
-<?php wp_redirect(get_bloginfo('siteurl').'/404', 404); exit; ?>
+<?php wp_redirect(get_bloginfo('url').'/404', 404); exit; ?>
 <?php endif; ?>
