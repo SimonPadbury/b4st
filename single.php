@@ -3,13 +3,13 @@
 <div class="container">
   <div class="row">
     
-    <div class="col-sm-8">
+    <div class="col-md-8">
       <div id="content" role="main">
         <?php get_template_part('loops/content', 'single'); ?>
       </div><!-- /#content -->
     </div>
     
-    <div class="col-sm-4" id="sidebar" role="navigation">
+    <div class="col-md-4" id="sidebar">
        <?php get_sidebar(); ?>
     </div>
     
