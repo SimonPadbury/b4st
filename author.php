@@ -8,6 +8,7 @@ if (
     !in_array('editor', $userInfo -> roles)
 ) {
     $isAuthor = false;
+    wp_redirect(get_bloginfo('url').'/404', 404);
 }
 ?>
 <?php get_header(); ?>
