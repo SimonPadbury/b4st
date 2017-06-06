@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row">
     
-    <div class="col-sm-8">
+    <div class="<?php if(is_active_sidebar('sidebar-widget-area')): ?>col-sm-8<?php else: ?>col-sm-12<?php endif; ?>">
       <div id="content" role="main">
         <?php get_template_part('loops/content', 'page'); ?>
       </div><!-- /#content -->
