@@ -16,15 +16,15 @@ if (
 	<div class="container">
 	  <div class="row">
 
-	    <div class="col-sm-8">
+	    <div class="<?php if(is_active_sidebar('sidebar-widget-area')): ?>col-sm-8<?php else: ?>col-sm-12<?php endif; ?>">
 
-			<header class="page-header">
-                <?php if ($isAuthor === true): ?>
-    				<h1>
-                        <?php echo sprintf(__('Author %s', 'b4st'), '<strong>' . get_the_author_meta('user_nicename', $userInfo -> data -> ID) . '</strong>'); ?>
-    				</h1>
-                <?php endif; ?>
-			</header><!-- .page-header -->
+		<header class="page-header">
+        	<?php if ($isAuthor === true): ?>
+    			<h1>
+           	        <?php echo sprintf(__('Author %s', 'b4st'), '<strong>' . get_the_author_meta('user_nicename', $userInfo -> data -> ID) . '</strong>'); ?>
+    			</h1>
+           	<?php endif; ?>
+		</header><!-- .page-header -->
             <?php if(have_posts()): ?>
                <?php get_template_part('loops/content', get_post_format()); ?>
             <?php else: ?>
