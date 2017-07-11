@@ -24,7 +24,7 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
         </header>
         <section>
             <?php the_post_thumbnail(); ?>
-            <?php the_content( __( '&hellip; ' . __('Continue reading', 'b4st' ) . ' <i class="glyphicon glyphicon-arrow-right"></i>', 'b4st' ) ); ?>
+            <?php the_content( __( '&hellip; ' . __('Continue reading', 'b4st' ) . ' <i class="fa fa-arrow-right"></i>', 'b4st' ) ); ?>
         </section>
         <footer>
             <p class="text-muted" style="margin-bottom: 20px;">
