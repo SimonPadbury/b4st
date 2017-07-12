@@ -1,3 +1,13 @@
+/* Fix for container within navbar on small viewports, for Firefox and Chrome.
+This may but be necessary when Bootstrap 4 is improved after alpha. */
+
+@media (max-width: 575px) {
+  .navbar > .container {
+    position: static;
+    width: 100%;
+  }
+}
+
 /* Max content widths */
 
 .size-auto, 
@@ -5,8 +15,8 @@
 .size-large,
 .size-medium,
 .size-thumbnail {
-	max-width: 100%;
-	height: auto
+  max-width: 100%;
+  height: auto
 }
 
 /* Navbar */
@@ -21,7 +31,7 @@
 }
 
 .navbar .dropdown-menu {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 /* Main content */
@@ -76,16 +86,16 @@ textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
   margin-top: 40px
 }
 ol.commentlist {
-	counter-reset: li; /* Initiate a counter */
-	padding: 0
+  counter-reset: li; /* Initiate a counter */
+  padding: 0
 }
 ol.commentlist ul {
   padding: 0
 }
 ol.commentlist > li {
-	position: relative;
-	margin: 0 0 20px 0;
-	list-style: none /* Disable the normal item numbering */
+  position: relative;
+  margin: 0 0 20px 0;
+  list-style: none /* Disable the normal item numbering */
 }
 ol.commentlist > li:before {
   content: "Thread " counter(li); /* Use the counter as content */
