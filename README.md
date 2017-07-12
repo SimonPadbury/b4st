@@ -1,6 +1,6 @@
 #b4st - A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 1.6.3*
+*Version 1.6.4*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -20,8 +20,8 @@
 * **Font Awesome 4.7.0** (served by cdnjs.com CDN) enqueued.
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 * **Navbar with dropdowns (child menus)** – a [custom walker nav menu class](https://github.com/SimonPadbury/b4st/blob/master/functions/navbar.php) has been built to handle the dropdowns.
-* NEW for v.1.6.3: navbar dropdown on hover.
-* NEW for v.1.6.3: sidebar-widget-area is optional. If no widgets, then the sidebar will not be shown (main column automatically becomes full width).
+* Navbar dropdown on hover.
+* Sidebar-widget-area is optional. If no widgets, then the sidebar will not be shown (main column automatically becomes full width).
 * A starter CSS theme – `/theme/css/b4st.css`, enqueued.
 * WordPress menu and WordPress search form in the Bootstrap 4 `.navbar` (Note: Bootstrap 4 navbar dropdowns supports only two levels of menu links (no sub-sub menus).
 * Bootstrap pagination for blog index and blog category pages.
