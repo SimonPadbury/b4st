@@ -12,7 +12,7 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
 ?>
 
   <?php if(have_posts()): while(have_posts()): the_post();?>
-  <article role="article" id="post_<?php the_ID()?>">
+  <article role="article" id="post_<?php the_ID()?>"<?php post_class();?>>
     <header>
       <h2>
         <a href="<?php the_permalink(); ?>">
