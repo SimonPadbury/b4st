@@ -18,7 +18,7 @@ class b4st_walker_nav_menu extends Walker_Nav_menu {
     $classes = empty( $item->classes ) ? array() : (array) $item->classes;
 
 		$classes[] = ($args->walker->has_children) ? 'dropdown' : '';
-		$classes[] = ($item->current || $item->current_item_anchestor) ? 'active' : '';
+		$classes[] = ($item->current || $item->current_item_ancestor) ? 'active' : '';
 		$classes[] = 'nav-item';
 		$classes[] = 'nav-item-' . $item->ID;
 		if( $depth && $args->walker->has_children ){
