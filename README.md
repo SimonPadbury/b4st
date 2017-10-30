@@ -18,7 +18,7 @@
 
 * **Bootstrap 4.0.0-beta.2** (served by cdnjs.com CDN) CSS and JS enqueued.
 
-* **Popper 1.11.0** (served by cdnjs.com CDN) JS enqueued. Because Bootstrap popovers and tooltips need it.
+* **Popper 1.12.3** (served by cdnjs.com CDN) JS enqueued. Because Bootstrap popovers and tooltips need it.
 
 * **jQuery** enqueued, served from the WordPress onboard (pre-registered) jQuery.
 
