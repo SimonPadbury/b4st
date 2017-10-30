@@ -10,7 +10,7 @@ function b4st_wp_link_pages($wp_links){
 
 	// Generate current page base url without pagination
 	$post_base = trailingslashit( get_site_url(null, $post->post_name) );
-	$wp_links = trim(str_replace(array('<div class="page-links">Pages: ', '</div>'), '', $wp_links));
+	$wp_links = trim(str_replace(array('<p class="page-links">Pages: ', '</p>'), '', $wp_links));
 
 	// Get out of here ASAP if there is no paging
   if ( empty($wp_links) )
