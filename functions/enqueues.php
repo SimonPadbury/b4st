@@ -15,7 +15,7 @@ function b4st_enqueues() {
 
 	/* Scripts */
 
-	wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js', false, '3.2.1.slim', true);
+	wp_register_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', false, '3.2.1', true);
 	wp_enqueue_script('jquery');
 
   	wp_register_script('modernizr',  'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', false, '2.8.3', true);
