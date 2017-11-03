@@ -20,7 +20,7 @@
 
 * **Popper 1.12.3** (served by cdnjs.com CDN) JS enqueued. Because Bootstrap popovers and tooltips need it.
 
-* **jQuery** enqueued, served from the WordPress onboard (pre-registered) jQuery.
+* **jQuery 3.2.1** enqueued, (served by cdnjs.com CDN),
 
 * **Font Awesome 4.7.0** (served by cdnjs.com CDN) enqueued.
 
