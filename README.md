@@ -1,6 +1,6 @@
 #b4st - A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 1.7.3*
+*Version 1.7.4*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -30,7 +30,7 @@
 
 * Sidebar-widget-area is optional. If no widgets, then the sidebar will not be shown (main column automatically becomes full width).
 
-* A starter CSS theme – `/theme/css/b4st.css`, enqueued.
+* A starter CSS theme – `/theme/css/b4st.css`, enqueued. (Note: do not put your styles in `styles.css`.)
 
 * WordPress menu and WordPress search form in the Bootstrap 4 `.navbar` (Note: Bootstrap 4 navbar dropdowns supports only two levels of menu links (no sub-sub menus).
 
