@@ -1,14 +1,12 @@
 #b4st - A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 1.7.4*
+*Version 1.8*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
 ------------------
 
 **b4st is a simple WordPress starter theme loaded with Bootstrap 4.**
-
-> **NOTE:** Bootstrap v4.0.0-beta.2 is being called from `https://cdnjs.com/libraries/twitter-bootstrap`
 
 ## Features of b4st
 
@@ -22,7 +20,7 @@
 
 * **jQuery 3.2.1** enqueued, (served by cdnjs.com CDN),
 
-* **Font Awesome 4.7.0** (served by cdnjs.com CDN) enqueued.
+* **[new] Font Awesome 5.0.1** (served by use.fontawesome.com CDN) enqueued.
 
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 
