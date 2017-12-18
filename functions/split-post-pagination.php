@@ -43,11 +43,11 @@ function b4st_wp_link_pages($wp_links){
 
   // Fastbackward to first page in series
 	if ( $current_page > 2 )
-	$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . '"><i class="fa fa-angle-double-left"></i></a></li>';
+	$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . '"><i class="fas fa-angle-double-left"></i></a></li>';
 
   // Backward to previous page in series
 	if ( $current_page > 1 )
-		$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . ($current_page - 1) . '"><i class="fa fa-angle-left"></i></a></li>';
+		$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . ($current_page - 1) . '"><i class="fas fa-angle-left"></i></a></li>';
 
   // Loop through links to each page in series
   foreach( $links as $key => $link ) {
@@ -60,11 +60,11 @@ function b4st_wp_link_pages($wp_links){
 
   // Forward to next page in series
 	if ( $current_page < $num_pages )
-		$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . ($current_page + 1) . '"><i class="fa fa-angle-right"></i></a></li>';
+		$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . ($current_page + 1) . '"><i class="fas fa-angle-right"></i></a></li>';
 
   // Fastforward to last page in series
   if ( $current_page < ($num_pages - 1) )
-    $output .= '<li class="page-item"><a class="page-link" href="' . $post_base . $num_pages . '"><i class="fa fa-angle-double-right"></i></a></li>';
+    $output .= '<li class="page-item"><a class="page-link" href="' . $post_base . $num_pages . '"><i class="fas fa-angle-double-right"></i></a></li>';
 
   // Complete the pagination list
 	$output .= '</ul>';
