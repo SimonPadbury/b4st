@@ -44,7 +44,11 @@
 
 ---
 
-#### Maybe you would also be interested in [Atomic Boot Pug](https://github.com/SimonPadbury/Atomic-Boot-Pug).
+## The `b4st` [Wiki](https://github.com/SimonPadbury/b4st/wiki)
+
+This is the place to find some answers. If you don't find what you want, open an Issue. If you want want to see something in `b4st` and you can do it yourself, feel at liberty to add it as a pull request (but bear in mind that this is only meant to be a _starter_ theme. 
+
+## Maybe you would also be interested in [Atomic Boot Pug](https://github.com/SimonPadbury/Atomic-Boot-Pug)
 
 Inspired by Brad Frost's [Atomic Design](http://atomicdesign.bradfrost.com/), Atomic Boot Pug is comprised of a set of Bootstrap 4 docs demo snippets (tranformed into [Pug](https://pugjs.org/api/getting-started.html) mixins) reorganized into a starter styleguide.
 
