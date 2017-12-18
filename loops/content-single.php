@@ -18,10 +18,10 @@ The Single Posts Loop
         </em>
       </h5>
       <p class="text-muted" style="margin-bottom: 30px;">
-        <i class="fa fa-folder-open-o"></i>&nbsp;
+        <i class="fa fa-folder-open"></i>&nbsp;
         <?php _e('Filed under', 'b4st'); ?>:
         <?php the_category(', ') ?><br/>
-        <i class="fa fa-comment-o"></i>&nbsp;
+        <i class="fa fa-comment"></i>&nbsp;
         <?php _e('Comments', 'b4st'); ?>:
         <?php comments_popup_link(__('None', 'b4st'), '1', '%'); ?>
       </p>
