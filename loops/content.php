@@ -28,14 +28,14 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
     </header>
     <section>
       <?php the_post_thumbnail(); ?>
-      <?php the_content( __( '&hellip; ' . __('Continue reading', 'b4st' ) . ' <i class="fa fa-arrow-right"></i>', 'b4st' ) ); ?>
+      <?php the_content( __( '&hellip; ' . __('Continue reading', 'b4st' ) . ' <i class="fas fa-arrow-right"></i>', 'b4st' ) ); ?>
     </section>
     <footer>
       <p class="text-muted" style="margin-bottom: 20px;">
-        <i class="fa fa-folder-open"></i>&nbsp;
+        <i class="fas fa-folder-open"></i>&nbsp;
         <?php _e('Category', 'b4st'); ?>:
         <?php the_category(', ') ?><br/>
-        <i class="fa fa-comment"></i>&nbsp;
+        <i class="fas fa-comment"></i>&nbsp;
         <?php _e('Comments', 'b4st'); ?>:
         <?php comments_popup_link(__('None', 'b4st'), '1', '%'); ?>
       </p>
@@ -46,9 +46,9 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
   <?php if ( function_exists('b4st_pagination') ) { b4st_pagination(); } else if ( is_paged() ) { ?>
   <ul class="pagination">
     <li class="page-item older">
-      <?php next_posts_link('<i class="fa fa-arrow-left"></i> ' . __('Previous', 'b4st')) ?></li>
+      <?php next_posts_link('<i class="fas fa-arrow-left"></i> ' . __('Previous', 'b4st')) ?></li>
     <li class="page-item newer">
-      <?php previous_posts_link(__('Next', 'b4st') . ' <i class="fa fa-arrow-right"></i>') ?></li>
+      <?php previous_posts_link(__('Next', 'b4st') . ' <i class="fas fa-arrow-right"></i>') ?></li>
   </ul>
   <?php } ?>
 
