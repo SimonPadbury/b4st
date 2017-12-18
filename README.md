@@ -20,7 +20,7 @@
 
 * **jQuery 3.2.1** enqueued, (served by cdnjs.com CDN),
 
-* **[new] Font Awesome 5.0.1** (served by use.fontawesome.com CDN) enqueued.
+* **[NEW] Font Awesome 5.0.1** (served by use.fontawesome.com CDN) enqueued.
 
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 
