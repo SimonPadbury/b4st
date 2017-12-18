@@ -13,7 +13,7 @@ if (! isset($content_width))
 	$content_width = 600;
 
 function b4st_excerpt_readmore() {
-	return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'b4st') . ' <i class="fa fa-arrow-right"></i>' . '</a></p>';
+	return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'b4st') . ' <i class="fas fa-arrow-right"></i>' . '</a></p>';
 }
 add_filter('excerpt_more', 'b4st_excerpt_readmore');
 
