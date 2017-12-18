@@ -32,10 +32,10 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
     </section>
     <footer>
       <p class="text-muted" style="margin-bottom: 20px;">
-        <i class="fa fa-folder-open-o"></i>&nbsp;
+        <i class="fa fa-folder-open"></i>&nbsp;
         <?php _e('Category', 'b4st'); ?>:
         <?php the_category(', ') ?><br/>
-        <i class="fa fa-comment-o"></i>&nbsp;
+        <i class="fa fa-comment"></i>&nbsp;
         <?php _e('Comments', 'b4st'); ?>:
         <?php comments_popup_link(__('None', 'b4st'), '1', '%'); ?>
       </p>
