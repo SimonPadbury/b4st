@@ -44,7 +44,7 @@ if (have_comments()) : ?>
   <?php if (get_option('comment_registration') && !is_user_logged_in()) : ?>
   <p><?php printf(__('You must be <a href="%s">logged in</a> to post a comment.', 'b4st'), wp_login_url(get_permalink())); ?></p>
   <?php else : ?>
-  <form action="<?php echo get_option('url'); ?>/wp-comments-post.php" method="post" id="commentform">
+  <form action="<?php echo site_url('/wp-comments-post.php') ?>" method="post" id="commentform">
     <?php if (is_user_logged_in()) : ?>
     <p>
       <?php printf(__('Logged in as', 'b4st') . ' <a href="%s/wp-admin/profile.php">%s</a>.', get_option('url'), $user_identity); ?>
