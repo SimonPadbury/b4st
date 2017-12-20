@@ -1,6 +1,6 @@
 #b4st - A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 1.8*
+*Version 1.8.1*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -20,7 +20,7 @@
 
 * **jQuery 3.2.1** enqueued, (served by cdnjs.com CDN),
 
-* **[NEW] Font Awesome 5.0.1** (served by use.fontawesome.com CDN) enqueued.
+* **[NEW] Font Awesome 5.0.2** (served by use.fontawesome.com CDN) enqueued.
 
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 
