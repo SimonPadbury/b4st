@@ -42,9 +42,13 @@
 
 ---
 
+## b4st [Releases](https://github.com/SimonPadbury/b4st/releases/)
+
+Significant updates and milestones will be noted here: https://github.com/SimonPadbury/b4st/releases/
+
 ## The b4st [Wiki](https://github.com/SimonPadbury/b4st/wiki)
 
-This is the place to find some answers. If you don't find what you want, open an Issue. If you want want to see something in `b4st` and you can do it yourself, feel at liberty to add it as a pull request (but bear in mind that this is only meant to be a _starter_ theme. 
+This is the place to find some answers: https://github.com/SimonPadbury/b4st/wiki. If you don't find what you want, open an Issue. If you want want to see something in `b4st` and you can do it yourself, feel at liberty to add it as a pull request (but bear in mind that this is only meant to be a _starter_ theme. 
 
 ## Maybe you would also be interested in [Atomic Boot Pug](https://github.com/SimonPadbury/Atomic-Boot-Pug)
 
