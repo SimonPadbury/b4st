@@ -1,4 +1,4 @@
-# b4st - A Bootstrap 4 Starter Theme, for WordPress
+# b4st – A Bootstrap 4 Starter Theme, for WordPress
 
 *Version 1.8.1*
 
