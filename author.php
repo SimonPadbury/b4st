@@ -18,19 +18,24 @@ if (
 
       <div class="<?php if(is_active_sidebar('sidebar-widget-area')): ?>col-sm-8<?php else: ?>col-sm-12<?php endif; ?>">
 
-        <header class="page-header">
-          <?php if ($isAuthor === true): ?>
-          <h1>
-            <?php echo sprintf(__('Author %s', 'b4st'), '<strong>' . get_the_author_meta('user_nicename', $userInfo -> data -> ID) . '</strong>'); ?>
-          </h1>
+        <div id="content" role="main">
+          <header>
+            <?php if ($isAuthor === true): ?>
+            <h1>
+              <?php echo sprintf(__('Author: %s', 'b4st'), get_the_author_meta('user_nicename', $userInfo -> data -> ID)); ?>
+              <hr/>
+              <?php echo $curauth->display_name; ?>
+              <hr/>
+            </h1>
+            <?php endif; ?>
+          </header>
+          <?php if(have_posts()): ?>
+            <?php get_template_part('loops/index-loop'); ?>
+          <?php else: ?>
+            <?php get_template_part('loops/index-none'); ?>
           <?php endif; ?>
-        </header>
-        <!-- .page-header -->
-        <?php if(have_posts()): ?>
-        <?php get_template_part('loops/content', get_post_format()); ?>
-        <?php else: ?>
-        <?php get_template_part('loops/content', 'none'); ?>
-        <?php endif; ?>
+
+        </div><!-- /#content -->
       </div>
 
       <div class="col-sm-4" id="sidebar">
