@@ -48,12 +48,7 @@ This may but be necessary when Bootstrap 4 is improved after alpha. */
 #content footer {
   padding-bottom: 20px
 }
-.page-header {
-  background: #f9f9f9 none repeat scroll 0 0;
-  border-bottom: 1px solid #eee;
-  margin: 40px 0 20px;
-  padding: 10px 14px;
-}
+
 /* Sidebar */
 
 .sidebar {
