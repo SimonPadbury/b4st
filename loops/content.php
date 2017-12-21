@@ -4,10 +4,6 @@ The Default Loop (used by index.php and category.php)
 =====================================================
 
 If you require only post excerpts to be shown in index and category pages, then use the [---more---] line within blog posts.
-
-If you require different templates for different post types, then simply duplicate this template, save the copy as, e.g. "content-aside.php", and modify it the way you like it. (The function-call "get_post_format()" within index.php, category.php and single.php will redirect WordPress to use your custom content template.)
-
-Alternatively, notice that index.php, category.php and single.php have a post_class() function-call that inserts different classes for different post types into the section tag (e.g. <section id="" class="format-aside">). Therefore you can simply use e.g. .format-aside {your styles} in css/b4st.css style the different formats in different ways.
 */
 ?>
 
