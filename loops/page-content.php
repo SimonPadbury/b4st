@@ -1,7 +1,7 @@
 <?php
 /*
-The Page Loop
-=============
+The Page Content Loop
+=====================
 */
 ?>
 
