@@ -16,7 +16,7 @@
 
 * **Bootstrap 4.0.0-beta.2** (served by cdnjs.com CDN) CSS and JS enqueued.
 
-* **Popper 1.12.3** (served by cdnjs.com CDN) JS enqueued. Because Bootstrap popovers and tooltips need it.
+* **Popper 1.12.3** (served by cdnjs.com CDN) JS enqueued. Because needed by Bootstrap popovers, tooltips and collapsed navbar "hamburger" action.
 
 * **jQuery 3.2.1** enqueued, (served by cdnjs.com CDN),
 
