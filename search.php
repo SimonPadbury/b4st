@@ -9,7 +9,7 @@
           <h1><?php _e('Search Results for', 'b4st'); ?> &ldquo;<?php the_search_query(); ?>&rdquo;</h1>
         </header>
         <hr/>
-        <?php get_template_part('loops/content', 'search'); ?>
+        <?php get_template_part('loops/search-results'); ?>
       </div><!-- /#content -->
     </div>
     
