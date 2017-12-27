@@ -15,7 +15,6 @@ function b4st_enqueues() {
 	wp_register_script('font-awesome', 'https://use.fontawesome.com/releases/v5.0.2/js/all.js', false, '5.0.2', null);
 	wp_enqueue_script('font-awesome');
 
-
 	wp_register_script('jquery-3.2.1', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', false, '3.2.1', true);
 	wp_enqueue_script('jquery-3.2.1');
 
