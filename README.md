@@ -46,7 +46,7 @@
 
 Significant updates and milestones will be noted here: https://github.com/SimonPadbury/b4st/releases/
 
-## The b4st [Wiki](https://github.com/SimonPadbury/b4st/wiki)
+## b4st [Wiki](https://github.com/SimonPadbury/b4st/wiki)
 
 This is the place to find some answers: https://github.com/SimonPadbury/b4st/wiki. 
 
