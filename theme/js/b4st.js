@@ -1,6 +1,7 @@
 /*
  * b4st 1.9.1
  */
+
 (function ($) {
 
 	'use strict';
@@ -17,7 +18,7 @@
 		$('select, input[type=text], input[type=email], input[type=password], textarea').addClass('form-control');
 		$('input[type=submit]').addClass('btn btn-primary');
 
-    	// Pagination fix for ellipsis
+		// Pagination fix for ellipsis
     	
 		$('.pagination .dots').addClass('page-link').parent().addClass('disabled');
 
