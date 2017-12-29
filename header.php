@@ -30,6 +30,11 @@
         'walker'          => new b4st_walker_nav_menu()
       ) );
     ?>
-    <?php get_template_part('navbar-search'); ?>
+    <form class="form-inline mx-0 ml-auto" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+      <input class="form-control mr-sm-1" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
+      <button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-outline-secondary my-2 my-sm-0">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
   </div>
 </nav>
