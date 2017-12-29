@@ -1,3 +1,6 @@
+/*
+ * b4st 1.9.1
+ */
 (function ($) {
 
 	'use strict';
