@@ -2,6 +2,12 @@
 <html class="no-js">
 <head>
   <title><?php wp_title('•', true, 'right'); bloginfo('name'); ?></title>
+  <meta name="description" content="<?php if ( is_single() ) {
+      single_post_title('', true); 
+    } else {
+      bloginfo('name'); echo " - "; bloginfo('description');
+    }
+  ?>" />
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
