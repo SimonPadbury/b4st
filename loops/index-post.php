@@ -13,12 +13,12 @@ Used by index.php, category.php and author.php
         <?php the_title()?>
       </a>
     </h2>
-    <h5>
+    <p>
       <em>
         <span class="text-muted author"><?php _e('By', 'b4st'); echo " "; ?><?php the_author_posts_link(); ?>,</span>
         <time  class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php the_time('jS F Y') ?></time>
       </em>
-    </h5>
+    </p>
   </header>
   <section>
     <?php the_post_thumbnail(); ?>
