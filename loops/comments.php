@@ -14,8 +14,8 @@ if ( post_password_required() ) { ?>
 
 if (have_comments()) : ?>
 
-<h3><?php _e('Feedback', 'b4st'); ?></h3>
-<p class="text-muted" style="margin-bottom: 20px;">
+<h2><?php _e('Feedback', 'b4st'); ?></h2>
+<p class="text-muted">
  <i class="fas fa-comment"></i>&nbsp; <?php _e('Comments', 'b4st');  ?>: <?php comments_number(__('None', 'b4st'), '1', '%'); ?>
 </p>
 
