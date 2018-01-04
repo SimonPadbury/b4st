@@ -20,10 +20,18 @@ Used by index.php, category.php and author.php
       </em>
     </p>
   </header>
-  <section>
+  <main>
     <?php the_post_thumbnail(); ?>
-    <?php the_content( __( '&hellip; ' . __('Continue reading', 'b4st' ) . ' <i class="fas fa-arrow-right"></i>', 'b4st' ) ); ?>
-  </section>
+
+    <?php if ( has_excerpt( $post->ID ) ) { 
+  		the_excerpt(); 
+    ?><p><a href="<?php the_permalink(); ?>">
+    	<?php _e( '&hellip; ' . __('Continue reading', 'b4st' ) . ' <i class="fas fa-arrow-right"></i>', 'b4st' ) ?>
+      </a></p>
+  	<?php } else { 
+  		the_content( __( '&hellip; ' . __('Continue reading', 'b4st' ) . ' <i class="fas fa-arrow-right"></i>', 'b4st' ) ); 
+		} ?>
+  </main>
   <footer>
     <p class="text-muted" style="margin-bottom: 20px;">
       <i class="fas fa-folder-open"></i>&nbsp;
