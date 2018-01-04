@@ -14,9 +14,14 @@ This may but be necessary when Bootstrap 4 is improved after alpha. */
 
 /* Max img widths */
 
-img {
-  max-width: 100%;
-  height: auto;
+img,
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
 }
 
 /* Navbar */
