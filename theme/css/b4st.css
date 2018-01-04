@@ -14,13 +14,9 @@ This may but be necessary when Bootstrap 4 is improved after alpha. */
 
 /* Max content widths */
 
-.size-auto, 
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
+img {
   max-width: 100%;
-  height: auto
+  height: auto;
 }
 
 /* Navbar */
@@ -86,7 +82,9 @@ textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
 }
 ol.commentlist {
   counter-reset: li; /* Initiate a counter */
-  padding: 0
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 ol.commentlist ul {
   padding: 0
