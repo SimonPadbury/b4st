@@ -26,11 +26,11 @@ The Single Posts Loop
         <?php comments_popup_link(__('None', 'b4st'), '1', '%'); ?>
       </p>
     </header>
-    <section>
+    <main>
       <?php the_post_thumbnail(); ?>
       <?php the_content()?>
       <?php wp_link_pages(); ?>
-    </section>
+    </main>
   </article>
   <?php comments_template('/loops/comments.php'); ?>
   <?php endwhile; ?>
