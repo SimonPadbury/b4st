@@ -9,8 +9,9 @@ function b4st_setup() {
 }
 add_action('init', 'b4st_setup');
 
-if (! isset($content_width))
+if (! isset($content_width)) {
 	$content_width = 600;
+}
 
 function b4st_excerpt_readmore() {
 	return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Continue reading', 'b4st') . ' <i class="fas fa-arrow-right"></i>' . '</a></p>';
