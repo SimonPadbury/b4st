@@ -19,8 +19,8 @@ if ( ! function_exists( 'b4st_pagination' ) ) {
 			'type' => 'list'
 		) );
 		$paginate_links = str_replace( "<ul class='page-numbers'>", "<ul class='pagination'>", $paginate_links );
-		$paginate_links = str_replace( "<li><span class='page-numbers current'>", "<li class='page-item active'><a class='page-link' href='#'>", $paginate_links );
     $paginate_links = str_replace( "<li>", "<li class='page-item'>", $paginate_links );
+    $paginate_links = str_replace( "<li class='page-item'><span aria-current='page' class='page-numbers current'>", "<li class='page-item active'><a class='page-link' href='#'>", $paginate_links );
 		$paginate_links = str_replace( "<a", "<a class='page-link' ", $paginate_links );
 
 		$paginate_links = str_replace( "</span>", "</a>", $paginate_links );
