@@ -6,7 +6,7 @@ function b4st_enqueues() {
 
 	wp_register_style('bootstrap-css', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.min.css', false, '4.0.0-beta.2', null);
 	wp_enqueue_style('bootstrap-css');
-
+        wp_enqueue_style('style-css', get_template_directory_uri().'/style.css', false, null);
   	wp_register_style('b4st-css', get_template_directory_uri() . '/theme/css/b4st.css', false, null);
 	wp_enqueue_style('b4st-css');
 
