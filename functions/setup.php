@@ -13,10 +13,12 @@ if (! isset($content_width)) {
 	$content_width = 600;
 }
 
-function b4st_excerpt_readmore() {
-	return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Continue reading', 'b4st') . ' <i class="fas fa-arrow-right"></i>' . '</a></p>';
+if ( ! function_exists( 'b4st_excerpt_readmore' ) ) {
+	function b4st_excerpt_readmore() {
+		return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Continue reading', 'b4st') . ' <i class="fas fa-arrow-right"></i>' . '</a></p>';
+	}
+	add_filter('excerpt_more', 'b4st_excerpt_readmore');
 }
-add_filter('excerpt_more', 'b4st_excerpt_readmore');
 
 // Add post formats support. See http://codex.wordpress.org/Post_Formats
 add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
