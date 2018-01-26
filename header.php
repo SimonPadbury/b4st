@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" <?php language_attributes(); ?>>
 <head>
-  <title><?php wp_title('•', true, 'right'); bloginfo('name'); ?></title>
   <meta name="description" content="<?php if ( is_single() ) {
-      single_post_title('', true); 
+      single_post_title('', true);
     } else {
       bloginfo('name'); echo " - "; bloginfo('description');
     }
@@ -17,7 +16,7 @@
 <body <?php body_class(); ?>>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light">
-  <div class="container">
+  <div class="container-responsive">
 
     <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
 
@@ -38,13 +37,13 @@
         ) );
       ?>
 
-      <form class="form-inline mx-0 ml-auto" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+      <form class="form-inline ml-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
         <input class="form-control mr-sm-1" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
         <button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-outline-secondary my-2 my-sm-0">
           <i class="fas fa-search"></i>
         </button>
       </form>
     </div>
-    
+
   </div>
 </nav>

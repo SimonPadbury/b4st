@@ -1,4 +1,7 @@
 <?php
+/**!
+ * Navbar walker nav menu
+ */
 
 class b4st_walker_nav_menu extends Walker_Nav_menu {
 

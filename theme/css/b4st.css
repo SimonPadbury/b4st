@@ -1,21 +1,37 @@
 /**!
- * b4st 1.9.2
+ * b4st CSS
  */
 
-/* Fix for container within navbar on small viewports, for Firefox and Chrome.
-This may but be necessary when Bootstrap 4 is improved after alpha. */
+.site-header-image {
+	display: block;
+	margin: auto;
+}
 
-@media (max-width: 575px) {
-  .navbar > .container {
-    position: static;
-    width: 100%;
-  }
+.wp-caption {}
+.wp-caption-text {}
+.sticky {}
+.screen-reader-text {}
+.gallery-caption {}
+
+.bypostauthor {}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
 }
 
 /* Max img widths */
 
 img,
-.size-auto, 
+.size-auto,
 .size-full,
 .size-large,
 .size-medium,
@@ -24,52 +40,45 @@ img,
 	height: auto;
 }
 
-/* Navbar */
+/* Responsive Container (because Bootstrap 4.0.0 doesn't have this) */
 
-.navbar-topbar {
-  border-radius: 0;
+.container-responsive {
+	width: 100%;
+	max-width: 1140px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-.navbar .dropdown-menu li {
-  width: 100%;
-  margin-left: 0 !important;
+.navbar > .container-responsive {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
-.navbar .dropdown-menu {
-  margin-top: 0;
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-responsive {
+	padding-right: 0;
+	padding-left: 0;
+}
+.navbar > .container,
+.navbar > .container-responsive {
+	max-width: 1110px;
 }
 
 /* Main content */
 
-#content article {
-  margin: 40px 0
-}
-#content header {
-  margin: 20px 0
-}
-#content section {
-  margin-bottom: 20px
-}
-#content footer {
-  padding-bottom: 20px
-}
-
 /* Sidebar */
-
-.sidebar {
-  margin-top: 20px
-}
-.sidebar section {
-  margin-bottom: 40px
-}
-.sidebar ul,
-.sidebar ol {
-  list-style-type: none;
-  padding: 0
-}
-.sidebar li {
-  margin: 10px 0
-}
 
 /* Hide form placeholders on focus */
 
@@ -78,85 +87,31 @@ input:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
 input:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
 textarea:focus::-webkit-input-placeholder { color: transparent; }
 textarea:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
-textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */ 
+textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
 
 /* Comments */
 
-#respond {
-  margin-top: 40px
-}
-ol.commentlist {
-  counter-reset: li; /* Initiate a counter */
-  padding: 0;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-ol.commentlist ul {
-  padding: 0
-}
-ol.commentlist > li {
-  position: relative;
-  margin: 0 0 20px 0;
-  list-style: none /* Disable the normal item numbering */
-}
-ol.commentlist > li:before {
-  content: "Thread " counter(li); /* Use the counter as content */
-  counter-increment: li; /* Increment the counter by 1 */
-  position:absolute;  
-  top: 0;
-  right: 0;
-  border-bottom: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-bottom-left-radius: 4px;
-  padding: 5px 20px 5px 10px;
-  color: #999
-}
-ol.commentlist li ol,
-ol.commentlist li ul {
-  list-style-type: none;
-  margin: 0
+#comments,
+#reply-title {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
 }
 
-.commentlist li li {
-  background: #f9f9f9;
+.commentlist,
+.commentlist ul {
+	padding-left: 0;
 }
-.commentlist li li li {
-  background: #fff
-}
-.commentlist li li li li {
-  background: #f9f9f9
-}
-.commentlist li li li li li li {
-  background: #fff
-}
+
 .commentlist li {
-  padding: 20px
+	padding: 1rem;
 }
-.commentlist ul li {
-  margin-top: 20px;
-  margin-bottom: 0
+
+.comment-meta {
+	margin-bottom: 1rem;
 }
-.reply p {
-  margin: 0
+.commentlist .children {
+	margin-top: 1rem;
 }
+
 
 /* Site footer */
-
-.site-footer {
-  padding: 40px 0
-}
-.site-footer ul,
-.site-footer ol {
-  list-style-type: none;
-  padding: 0
-}
-.site-footer li {
-  margin: 10px 0
-}
-.site-sub-footer p {
-  text-align: center
-}
-
-.site-footer p {
-  text-align: center
-}

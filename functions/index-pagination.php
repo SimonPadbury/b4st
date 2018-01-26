@@ -1,6 +1,7 @@
 <?php
-
-// Bootstrap pagination for index and category pages
+/**!
+ * Bootstrap pagination for index and category pages
+ */
 
 if ( ! function_exists( 'b4st_pagination' ) ) {
 	function b4st_pagination() {
@@ -14,8 +15,8 @@ if ( ! function_exists( 'b4st_pagination' ) ) {
 			'total' => $wp_query->max_num_pages,
 			'mid_size' => 5,
 			'prev_next' => True,
-			'prev_text' => __('<i class="fas fa-angle-left"></i> Newer'),
-			'next_text' => __('Older <i class="fas fa-angle-right"></i>'),
+			'prev_text' => __('<i class="fas fa-angle-left"></i> Newer', 'b4st'),
+			'next_text' => __('Older <i class="fas fa-angle-right"></i>', 'b4st'),
 			'type' => 'list'
 		) );
 		$paginate_links = str_replace( "<ul class='page-numbers'>", "<ul class='pagination'>", $paginate_links );

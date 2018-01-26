@@ -1,6 +1,6 @@
 # b4st – A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 1.9.2*
+*Version 2.0-beta*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -12,15 +12,15 @@
 
 * Simple, intuitive, clean code.
 
-* Bootstrap, theme CSS and JS, functions and loops are organized into different folders.
+* Theme CSS and JS, functions and loops are organized into different folders.
 
-* **Bootstrap 4.0.0-beta.2** (served by cdnjs.com CDN) CSS and JS enqueued.
+* **Bootstrap 4.0.0** (served by cdnjs.com CDN) CSS and JS enqueued.
 
-* **Popper 1.12.3** (served by cdnjs.com CDN) JS enqueued. Because needed by Bootstrap popovers, tooltips and collapsed navbar "hamburger" action.
+* **Popper 1.12.9** (served by cdnjs.com CDN) JS enqueued. Popper is needed by Bootstrap popovers, tooltips and collapsed navbar "hamburger" action.
 
-* **jQuery 3.2.1** enqueued, (served by cdnjs.com CDN),
+* **jQuery 3.3.1** enqueued, (served by cdnjs.com CDN),
 
-* **[NEW] Font Awesome 5.0.2** (served by use.fontawesome.com CDN) enqueued.
+* **Font Awesome 5.0.4** (JS served by use.fontawesome.com CDN) enqueued. CSS pseudo elements enabled by a tiny config JS.
 
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 
@@ -28,15 +28,19 @@
 
 * Sidebar-widget-area is optional. If no widgets, then the sidebar will not be shown (main column automatically becomes full width).
 
-* A starter CSS theme – `/theme/css/b4st.css`, enqueued. (Note: do not put your styles in `styles.css`.)
+* A starter CSS theme – `/theme/css/b4st.css`, enqueued. (Note: do not put your styles in `styles.css`, because that is not enqueued.)
 
 * WordPress menu and WordPress search form in the Bootstrap 4 `.navbar` (Note: Bootstrap 4 navbar dropdowns supports only two levels of menu links (no sub-sub menus).
 
-* Bootstrap pagination for blog index and blog category pages.
+* Bootstrap pagination for:
 
-* Bootstrap pagination for posts/pages if split over a series of 'pages'.
+  * blog index and blog category pages
 
-* Visual editor stylesheet – into which the same Bootstrap 4 and starter CSS theme are preloaded by `@import`, so that what you see in the visual editor is (mostly!) what you get at the front end (WYSI(M!)WYG). E.g. you will see the theme's typpography in the WordPress Post/Page editor, and you can use Bootstrap CSS in the editor – but its width will not be the same as your article column width in the front end.
+  * Bootstrap pagination for posts/pages if split over a series of 'pages'
+
+* **Visual editor stylesheet** – into which the same Bootstrap 4 and starter CSS theme are preloaded by `@import`, so that what you see in the visual editor is (mostly!) what you get at the front end (WYSI(M!)WYG). E.g. you will see the theme's typography in the WordPress Post/Page editor, and you can use Bootstrap CSS in the editor – but its width will not be the same as your article column width in the front end.
+
+* Child theme friendly (functions are pluggable).
 
 * [UNLICENCE](http://unlicense.org) (open source).
 
@@ -48,9 +52,9 @@ Significant updates and milestones will be noted here: https://github.com/SimonP
 
 ## b4st [Wiki](https://github.com/SimonPadbury/b4st/wiki)
 
-This is the place to find some answers: https://github.com/SimonPadbury/b4st/wiki. 
+This is the place to find some answers: https://github.com/SimonPadbury/b4st/wiki.
 
-If you don't find what you want, please open an Issue. 
+If you don't find what you want, please open an Issue.
 
 If you want want to see something in `b4st` and you can do it yourself, please feel at liberty to add it as a Pull Request. But remember that this is only meant to be a _starter_ theme – I don't want to add a load of stuff that most people will delete because they don't need it. There are other ways to expand the b4st project – e.g. via the wiki.
 

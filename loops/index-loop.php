@@ -1,10 +1,10 @@
 <?php
-/*
-The Default Loop (used by index.php, category.php and author.php)
-=================================================================
-
-If you require only post excerpts to be shown in index and category pages, then use the [---more---] line within blog posts.
-*/
+/**!
+ * The Default Loop (used by index.php, category.php and author.php)
+ *
+ * If you require only post excerpts to be shown in index and category pages,
+ * then use the [---more---] line within blog posts.
+ */
 ?>
 
 <?php if(have_posts()): while(have_posts()): the_post();?>
@@ -22,4 +22,9 @@ If you require only post excerpts to be shown in index and category pages, then 
 </ul>
 <?php } ?>
 
-<?php else: wp_redirect(get_bloginfo('url').'/404', 404); exit; endif; ?>
+<?php
+  else:
+    wp_redirect(esc_url( home_url() ) . '/404', 404);
+    exit;
+  endif;
+?>

@@ -1,1 +1,5 @@
-
+<?php
+/**!
+ * Index Post None
+ */
+?>
