@@ -14,14 +14,20 @@
         <?php
           _e('By ', 'b4st');
           the_author_posts_link();
-          echo ' ';
+          _e(' on ', 'b4st');
           b4st_post_date();
         ?>
-
       </div>
     </header>
     <main class="row">
-      <div class="col-sm-4 text-muted">
+      <div class="col-md order-md-2">
+        <?php
+          the_post_thumbnail();
+          the_content();
+          wp_link_pages();
+        ?>
+      </div>
+      <div class="col-md-4 order-md-1 text-muted">
         <i class="far fa-folder-open"></i>&nbsp;
         <?php _e('Category: ', 'b4st'); the_category(', ') ?><br/>
         <?php if ( has_tag() ) {
@@ -32,26 +38,17 @@
         <i class="far fa-comment"></i>&nbsp;
         <?php _e('Comments', 'b4st'); ?>:
         <?php comments_popup_link(__('None', 'b4st'), '1', '%'); ?><br/>
-        <i class="far fa-user"></i>&nbsp;
-        <?php _e('Other posts by', 'b4st'); ?>
-        <?php the_author_posts_link(); ?>
-      </div>
-      <div class="col-sm">
-        <?php
-          the_post_thumbnail();
-          the_content();
-          wp_link_pages();
-        ?>
+
+        <div class="author-bio row mt-4">
+          <div class="col-3 col-md-12 mb-3"><?php b4st_author_avatar(); ?></div>
+          <div class="col-9 col-md-12">
+            <p class="h4 author-name"><?php the_author_posts_link(); ?></p>
+            <p class="author-description"><?php b4st_author_description(); ?></p>
+            <p class="author-other-posts mb-0 border-top pt-3"><?php _e('Other posts by ', 'b4st'); the_author_posts_link(); ?></p>
+          </div>
+        </div><!-- /.author-bio -->
       </div>
     </main>
-    <footer class="footer-meta media border rounded p-3">
-      <span class="mr-2"><?php b4st_author_avatar(); ?></span>
-      <div class="media-body">
-        <p class="h3 author-name"><?php the_author_posts_link(); ?></p>
-        <p class="author-description"><?php b4st_author_description(); ?></p>
-        <p class="author-other-posts mb-0 border-top pt-3"><?php _e('See other posts by ', 'b4st'); the_author_posts_link(); ?></p>
-      </div>
-    </footer>
   </article>
 <?php
     if ( comments_open() || get_comments_number() ) :
