@@ -31,11 +31,11 @@ function b4st_split_post_pagination($wp_links){
 
 	$num_pages = count($links);
 
-  // Page status
-  $output = '<p class="mt-5 text-muted text-center">Page ' . $current_page . ' of ' . $num_pages . '</p>';
-
 	// Start UL
-	$output .= '<ul class="pagination justify-content-center">';
+	$output .= '<ul class="pagination justify-content-center mt-5">';
+
+	// Page status
+	$output .= '<li class="page-item disabled"><a class="page-link">Page ' . $current_page . ' of ' . $num_pages . '</a></li>';
 
   // Skip to first
   if ( $current_page == 1 ) {
@@ -65,7 +65,7 @@ function b4st_split_post_pagination($wp_links){
 
   // Next
 	if ( $current_page == $num_pages ) {
-		$output .= '<li class="page item disabled"><a class="page-link">';
+		$output .= '<li class="page-item disabled"><a class="page-link">';
 	} else {
 		$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . ($current_page + 1) . '">';
   }
@@ -73,7 +73,7 @@ function b4st_split_post_pagination($wp_links){
 
   // Skip to last
   if ( $current_page == $num_pages ) {
-		$output .= '<li class="page item disabled"><a class="page-link">';
+		$output .= '<li class="page-item disabled"><a class="page-link">';
 	} else {
 		$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . $num_pages . '">';
   }
