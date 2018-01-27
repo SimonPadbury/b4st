@@ -76,6 +76,13 @@ img,
 	max-width: 1110px;
 }
 
+/* Author bio */
+
+.author-bio .avatar {
+	border: 1px solid #dee2e6;
+	border-radius: 50%;
+}
+
 /* Main content */
 
 /* Sidebar */
