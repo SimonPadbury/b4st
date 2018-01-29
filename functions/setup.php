@@ -12,8 +12,8 @@ if ( ! function_exists('b4st_setup') ) {
 		add_theme_support('post-thumbnails');
 
 		update_option('thumbnail_size_w', 285); /* internal max-width of col-3 */
-		update_option('small_size_w', 540); /* internal max-width of col-6 */
-		update_option('medium_size_w', 825); /* internal max-width of col-9 */
+		update_option('small_size_w', 350); /* internal max-width of col-4 */
+		update_option('medium_size_w', 730); /* internal max-width of col-8 */
 		update_option('large_size_w', 1110); /* internal max-width of col-12 */
 
 		if ( ! isset($content_width) ) {
