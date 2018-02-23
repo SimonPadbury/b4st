@@ -1,34 +1,30 @@
 <?php
-/*
-The Index Post (or excerpt)
-===========================
-Used by index.php, category.php and author.php
-*/
+/**!
+ * The Default Loop (used by index.php, category.php and author.php)
+ * =================================================================
+ * If you require only post excerpts to be shown in index and category pages, 
+ * use the [---more---] line within blog posts.
+ */
 ?>
 
-<article class="mb-5" role="article" id="post_<?php the_ID()?>" <?php post_class(); ?> >
-  <header>
-    <h2>
-      <a href="<?php the_permalink(); ?>">
-        <?php the_title()?>
-      </a>
-    </h2>
-    <p class="text-muted">
-      <i class="far fa-calendar-alt"></i>&nbsp;<?php b4st_post_date(); ?>&nbsp;|
-      <i class="far fa-user"></i>&nbsp; <?php the_author_posts_link(); ?>&nbsp;|
-      <i class="far fa-comment"></i>&nbsp;<a href="<?php comments_link(); ?>"><?php comments_number('No comments', '1 comment', '% comments'); ?></a>
-    </p>
-  </header>
-  <main>
-    <?php the_post_thumbnail(); ?>
+<?php if(have_posts()): while(have_posts()): the_post(); ?>
 
-    <?php if ( has_excerpt( $post->ID ) ) {
-  		the_excerpt();
-    ?><p><a href="<?php the_permalink(); ?>">
-    	<?php _e( '&hellip; ' . __('Continue reading', 'b4st' ) . ' <i class="fas fa-arrow-right"></i>', 'b4st' ) ?>
-      </a></p>
-  	<?php } else {
-  		the_content( __( '&hellip; ' . __('Continue reading', 'b4st' ) . ' <i class="fas fa-arrow-right"></i>', 'b4st' ) );
-		} ?>
-  </main>
-</article>
+  <?php get_template_part('loops/index-post', get_post_format()); ?>
+
+<?php endwhile; ?>
+
+<?php if ( function_exists('b4st_pagination') ) { b4st_pagination(); } else if ( is_paged() ) { ?>
+<ul class="pagination">
+  <li class="page-item older">
+    <?php next_posts_link('<i class="fas fa-arrow-left"></i> ' . __('Previous', 'b4st')) ?></li>
+  <li class="page-item newer">
+    <?php previous_posts_link(__('Next', 'b4st') . ' <i class="fas fa-arrow-right"></i>') ?></li>
+</ul>
+<?php } ?>
+
+<?php
+  else:
+    wp_redirect(get_bloginfo('url').'/404', 404);
+    exit;
+  endif;
+?>
