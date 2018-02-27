@@ -33,8 +33,8 @@ add_filter( 'login_errors', 'show_less_login_info' );
 
 // Do not generate and display WordPress version
 
-if ( ! function_exists('progenitor_remove_generator') ) {
-  function progenitor_remove_generator()  {
+if ( ! function_exists('b4st_remove_generator') ) {
+  function b4st_remove_generator()  {
     return '';
   }
 }
@@ -42,11 +42,11 @@ add_filter( 'the_generator', 'no_generator' );
 
 // Remove Query Strings From Static Resources
 
-if ( ! function_exists('progenitor_remove_script_version') ) {
-  function progenitor_remove_script_version( $src ) {
+if ( ! function_exists('b4st_remove_script_version') ) {
+  function b4st_remove_script_version( $src ) {
     $parts = explode( '?', $src );
     return $parts[0];
   }
 }
-add_filter( 'script_loader_src', 'progenitor_remove_script_version', 15, 1 );
-add_filter( 'style_loader_src', 'progenitor_remove_script_version', 15, 1 );
+add_filter( 'script_loader_src', 'b4st_remove_script_version', 15, 1 );
+add_filter( 'style_loader_src', 'b4st_remove_script_version', 15, 1 );
