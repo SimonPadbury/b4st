@@ -8,11 +8,7 @@
 
 **b4st is a simple WordPress starter theme loaded with Bootstrap 4.**
 
-> **NOTE:**
-
-> When 2.0 is launched, this project will remain stable and mostly unchanged (except for bug fixes.) Until that time, there may yet be a few 'breaking' changes.
-
-> Although b4st was originally intended as a simple starter theme (hence the name b4st), several people wanted child theme capability so with v2.0-beta I have made functions 'pluggable'. (It can still be used as a starter theme.)
+Although b4st was originally intended as a simple starter theme (hence the name b4st), several people wanted child theme capability so with v2.0-beta I have made functions 'pluggable'. (It can still be used as a starter theme.)
 
 ## Features of b4st
 
@@ -63,6 +59,22 @@ This is the place to find some answers: https://github.com/SimonPadbury/b4st/wik
 If you don't find what you want, please open an Issue.
 
 If you want want to see something in `b4st` and you can do it yourself, please feel at liberty to add it as a Pull Request. But remember that this is only meant to be a _starter_ theme – I don't want to add a load of stuff that most people will delete because they don't need it. There are other ways to expand the b4st project – e.g. via the wiki.
+
+---
+
+## Looking for something more powerful? Try [Progenitor](https://github.com/Progenitor-Theme/)
+
+Project: https://github.com/Progenitor-Theme/progenitor. 
+
+Progenitor started as b4st but it has been developed to become somemething totally different. Progenitor is intended as a parent theme with pluggable functions, and hooks everywhere:
+
+* **Build hooks** – so child themes can override or remove Progenitor components
+* **Action hooks** – so child themes can add more comonents
+* **CSS class hooks** – so child themes can change the Bootstrap classes used by Progenitor, and add more classes
+
+Bootstrap 4. Font Awesome 5. WooCommerce ready. Multilingual support will be included -- please help by adding your language.
+
+Start your Progenitor projects from the *projenitor-child-starter* – https://github.com/Progenitor-Theme/progenitor-child-starter.
 
 ---
 
