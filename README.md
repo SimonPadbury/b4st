@@ -78,7 +78,7 @@ Start your Progenitor projects from the *projenitor-child-starter* – https://g
 
 ---
 
-## Maybe you would also be interested in [Atomic Boot Pug](https://github.com/SimonPadbury/Atomic-Boot-Pug)
+## Looking for a website Style Guide starter, building upon Bootstrap 4? Try [Atomic Boot Pug](https://github.com/SimonPadbury/Atomic-Boot-Pug)
 
 Inspired by Brad Frost's [Atomic Design](http://atomicdesign.bradfrost.com/), Atomic Boot Pug is comprised of a set of Bootstrap 4 docs demo snippets (tranformed into [Pug](https://pugjs.org/api/getting-started.html) mixins) reorganized into a starter styleguide.
 
