@@ -8,7 +8,7 @@ if ( ! function_exists('b4st_enqueues') ) {
 
 		// Styles
 
-		wp_register_style('bootstrap-css', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css', false, '4.0.0', null);
+		wp_register_style('bootstrap-css', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css', false, '4.1.0', null);
 		wp_enqueue_style('bootstrap-css');
 
 		wp_register_style('b4st-css', get_template_directory_uri() . '/theme/css/b4st.css', false, null);
@@ -31,7 +31,7 @@ if ( ! function_exists('b4st_enqueues') ) {
 		wp_register_script('popper',  'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', false, '1.14.0', true);
 		wp_enqueue_script('popper');
 
-		wp_register_script('bootstrap-js', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js', false, '4.0.0', true);
+		wp_register_script('bootstrap-js', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js', false, '4.1.0', true);
 		wp_enqueue_script('bootstrap-js');
 
 		wp_register_script('b4st-js', get_template_directory_uri() . '/theme/js/b4st.js', false, null, true);
