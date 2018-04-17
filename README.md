@@ -1,6 +1,6 @@
 # b4st – A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 2.0*
+*Version 2.1*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -8,7 +8,7 @@
 
 **b4st is a simple WordPress starter theme loaded with Bootstrap 4.**
 
-Although b4st was originally intended as a simple starter theme (hence the name b4st), several people wanted child theme capability so with v2.0-beta I have made functions 'pluggable'. (It can still be used as a starter theme.)
+Although b4st was originally intended as a simple starter theme (hence the name b4st), several people wanted child theme capability so with v2.0 I have made functions 'pluggable'. (It can still be used as a starter theme.)
 
 ## Features of b4st
 
@@ -33,6 +33,8 @@ Although b4st was originally intended as a simple starter theme (hence the name 
 * A starter CSS theme – `/theme/css/b4st.css`, enqueued. (Note: do not put your styles in `styles.css`, because that is not enqueued.)
 
 * WordPress menu and WordPress search form in the Bootstrap 4 `.navbar` (Note: Bootstrap 4 navbar dropdowns supports only two levels of menu links (no sub-sub menus).
+
+* Custom comments and response form
 
 * Bootstrap pagination for:
 
