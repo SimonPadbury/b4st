@@ -1,7 +1,8 @@
 <?php
-/**!
- * The Single Posts Loop
- */
+/*
+The Single Post
+===============
+*/
 ?>
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
@@ -28,7 +29,7 @@
     </main>
     <footer class="mt-5 border-top pt-3">
       <p>
-        <?php _e('Category: ', 'b4st'); the_category(', ') ?> | <?php if (has_tag()) { the_tags('Tags: ', ', '); ?> | <?php } _e('Comments', 'b4st'); ?>: <?php comments_popup_link(__('None', 'b4st'), '1', '%'); ?>
+        <?php _e('Category: ', 'b4st'); the_category(', ') ?> | <?php if (has_tag()) { the_tags('Tags: ', ', '); ?> | <?php } _e('Comments', 'b4st'); ?>: <?php printf( number_format_i18n( get_comments_number() ) ); ?>
       </p>
       <div class="author-bio media border-top pt-3">
         <?php b4st_author_avatar(); ?>
@@ -42,7 +43,8 @@
   </article>
 <?php
     if ( comments_open() || get_comments_number() ) :
-			comments_template();
+      //comments_template();
+      comments_template('/loops/single-post-comments.php');
 		endif;
   endwhile; else:
     wp_redirect(esc_url( home_url() ) . '/404', 404);
