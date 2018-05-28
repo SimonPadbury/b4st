@@ -27,6 +27,9 @@ if (
         </header>
         <?php if(have_posts()): ?>
           <?php get_template_part('loops/index-loop'); ?>
+        <?php else: ?>
+          <?php get_template_part('loops/index-none'); ?>
+        <?php endif; ?>
       </div><!-- /#content -->
     </div>
 
