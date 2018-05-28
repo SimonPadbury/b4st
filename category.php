@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container-responsive mt-5">
+<main class="container-responsive mt-5">
   <div class="row">
 
     <div class="col-sm">
@@ -17,6 +17,6 @@
     <?php get_sidebar(); ?>
 
   </div><!-- /.row -->
-</div><!-- /.container-responsive -->
+</main><!-- /.container-responsive -->
 
 <?php get_footer(); ?>

@@ -13,7 +13,7 @@ if (
 ?>
 <?php get_header(); ?>
 
-<div class="container-responsive mt-5">
+<main class="container-responsive mt-5">
   <div class="row">
 
     <div class="col-sm">
@@ -27,18 +27,12 @@ if (
         </header>
         <?php if(have_posts()): ?>
           <?php get_template_part('loops/index-loop'); ?>
-        <?php else: ?>
-          <?php get_template_part('loops/index-none'); ?>
-        <?php endif; ?>
-
       </div><!-- /#content -->
     </div>
 
     <?php get_sidebar(); ?>
 
-  </div>
-  <!-- /.row -->
-</div>
-<!-- /.container-responsive -->
+  </div><!-- /.row -->
+</main><!-- /.container-responsive -->
 
 <?php get_footer(); ?>

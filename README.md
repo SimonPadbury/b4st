@@ -1,6 +1,6 @@
 # b4st – A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 2.1*
+*Version 2.2*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -16,13 +16,13 @@ Although b4st was originally intended as a simple starter theme (hence the name 
 
 * Theme CSS and JS, functions and loops are organized into different folders.
 
-* **Bootstrap 4.1.0** (served by cdnjs.com CDN) CSS and JS enqueued.
+* **Bootstrap 4.1.1** (served by cdnjs.com CDN) CSS and JS enqueued.
 
-* **Popper 1.14.0** (served by cdnjs.com CDN) JS enqueued. Popper is needed by Bootstrap popovers, tooltips and collapsed navbar "hamburger" action.
+* **Popper 1.14.3** (served by cdnjs.com CDN) JS enqueued. Popper is needed by Bootstrap popovers, tooltips and collapsed navbar "hamburger" action.
 
 * **jQuery 3.3.1** enqueued, (served by cdnjs.com CDN),
 
-* **Font Awesome 5.0.10** (JS served by use.fontawesome.com CDN) enqueued. CSS pseudo elements enabled by a tiny config JS.
+* **Font Awesome 5.0.13** (JS served by use.fontawesome.com CDN) enqueued. CSS pseudo elements enabled by a tiny config JS.
 
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 
@@ -63,6 +63,11 @@ If you don't find what you want, please open an Issue.
 If you want want to see something in `b4st` and you can do it yourself, please feel at liberty to add it as a Pull Request. But remember that this is only meant to be a _starter_ theme – I don't want to add a load of stuff that most people will delete because they don't need it. There are other ways to expand the b4st project – e.g. via the wiki.
 
 ---
+
+## Meet b4st's younger brother, m1st (Materiallize CSS starter theme for WordPress)
+
+[https://github.com/SimonPadbury/m1st](https://github.com/SimonPadbury/m1st)
+
 
 ## Looking for something more powerful? Try [Progenitor](https://github.com/Progenitor-Theme/)
 

@@ -46,11 +46,13 @@ The Single Post
       //comments_template();
       comments_template('/loops/single-post-comments.php');
 		endif;
-  endwhile; else:
-    wp_redirect(esc_url( home_url() ) . '/404', 404);
-    exit;
+  endwhile; else :
+    get_template_part('loops/404');
   endif;
 ?>
+
+
+
 <div class="row mt-5 border-top pt-3">
   <div class="col">
     <?php previous_post_link('%link', '<i class="fas fa-fw fa-arrow-left"></i> Previous post: '.'%title'); ?>
