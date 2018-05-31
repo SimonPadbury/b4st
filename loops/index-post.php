@@ -6,7 +6,7 @@ Used by index.php, category.php and author.php
 */
 ?>
 
-<article class="mb-5" role="article" id="post_<?php the_ID()?>" <?php post_class(); ?> >
+<article role="article" id="post_<?php the_ID()?>" <?php post_class("mb-5"); ?> >
   <header>
     <h2>
       <a href="<?php the_permalink(); ?>">
