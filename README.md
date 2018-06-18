@@ -1,6 +1,6 @@
 # b4st – A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 2.2*
+*Version 2.3*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -71,7 +71,7 @@ If you want want to see something in `b4st` and you can do it yourself, please f
 
 ## Looking for something more powerful? Try [Progenitor](https://github.com/Progenitor-Theme/)
 
-Project: https://github.com/Progenitor-Theme/progenitor. 
+Project: https://github.com/Progenitor-Theme/progenitor.
 
 Progenitor started as b4st but it has been developed to become somemething totally different. Progenitor is intended as a parent theme with pluggable functions, and hooks everywhere:
 

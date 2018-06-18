@@ -16,7 +16,7 @@
 <body <?php body_class(); ?>>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light">
-  <div class="container-responsive">
+  <div class="container">
 
     <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
 

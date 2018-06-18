@@ -50,42 +50,6 @@ img,
 	height: auto;
 }
 
-/* Responsive Container (because Bootstrap 4.0.0 doesn't have this) */
-
-.container-responsive {
-	width: 100%;
-	max-width: 1140px;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.navbar > .container-responsive {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-}
-
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-responsive {
-	padding-right: 0;
-	padding-left: 0;
-}
-.navbar > .container,
-.navbar > .container-responsive {
-	max-width: 1110px;
-}
-
 /* Author bio */
 
 .author-bio .avatar {
