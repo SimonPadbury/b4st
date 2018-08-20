@@ -16,13 +16,13 @@ Although b4st was originally intended as a simple starter theme (hence the name 
 
 * Theme CSS and JS, functions and loops are organized into different folders.
 
-* **Bootstrap 4.1.3** (served by cdnjs.com CDN) CSS and JS enqueued.
+* **Bootstrap 4.1.3** (served by `cdnjs.com` CDN) CSS and JS enqueued.
 
-* **Popper 1.14.3** (served by cdnjs.com CDN) JS enqueued. Popper is needed by Bootstrap popovers, tooltips and collapsed navbar "hamburger" action.
+* **Popper 1.14.3** (served by `cdnjs.com` CDN) JS enqueued. Popper is needed by Bootstrap popovers, tooltips and collapsed navbar "hamburger" action.
 
-* **jQuery 3.3.1** enqueued, (served by cdnjs.com CDN),
+* **jQuery 3.3.1** enqueued, (served by `cdnjs.com` CDN),
 
-* **Font Awesome 5.2.0** (JS served by use.fontawesome.com CDN) enqueued. CSS pseudo elements enabled by a tiny config JS.
+* **Font Awesome 5.2.0** (CSS served by `use.fontawesome.com` CDN) enqueued.
 
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 
@@ -42,7 +42,7 @@ Although b4st was originally intended as a simple starter theme (hence the name 
 
   * Bootstrap pagination for posts/pages if split over a series of 'pages'
 
-* **Visual editor stylesheet** – into which the same Bootstrap 4 and starter CSS theme are preloaded by `@import`, so that what you see in the visual editor is (mostly!) what you get at the front end (WYSI(M!)WYG). E.g. you will see the theme's typography in the WordPress Post/Page editor, and you can use Bootstrap CSS in the editor – but its width will not be the same as your article column width in the front end.
+* **Visual editor stylesheet** – into which the same Bootstrap 4 CSS, Font Awesome 5 CSS and starter CSS theme are preloaded by `@import`, so that what you see in the visual editor is (mostly!) what you get at the front end (WYSI(M!)WYG). E.g. you will see the theme's typography in the WordPress Post/Page editor, and you can use Bootstrap CSS in the editor – but its width will not be the same as your article column width in the front end.
 
 * Child theme friendly (functions are pluggable).
 
