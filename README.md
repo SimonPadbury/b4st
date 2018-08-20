@@ -1,6 +1,6 @@
 # b4st – A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 2.3*
+*Version 2.4*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -16,13 +16,13 @@ Although b4st was originally intended as a simple starter theme (hence the name 
 
 * Theme CSS and JS, functions and loops are organized into different folders.
 
-* **Bootstrap 4.1.1** (served by cdnjs.com CDN) CSS and JS enqueued.
+* **Bootstrap 4.1.3** (served by cdnjs.com CDN) CSS and JS enqueued.
 
 * **Popper 1.14.3** (served by cdnjs.com CDN) JS enqueued. Popper is needed by Bootstrap popovers, tooltips and collapsed navbar "hamburger" action.
 
 * **jQuery 3.3.1** enqueued, (served by cdnjs.com CDN),
 
-* **Font Awesome 5.0.13** (JS served by use.fontawesome.com CDN) enqueued. CSS pseudo elements enabled by a tiny config JS.
+* **Font Awesome 5.2.0** (JS served by use.fontawesome.com CDN) enqueued. CSS pseudo elements enabled by a tiny config JS.
 
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 
