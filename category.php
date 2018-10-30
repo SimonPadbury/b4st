@@ -19,11 +19,7 @@
       </div><!-- /#content -->
     </div>
 
-    <?php 
-      b4st_action_sidebar_before();
-      get_sidebar();
-      b4st_action_sidebar_after();
-    ?>
+    <?php get_sidebar(); ?>
 
   </div><!-- /.row -->
 </main><!-- /.container -->
