@@ -1,6 +1,6 @@
 # b4st – A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 2.4.2*
+*Version 2.4.3*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -29,6 +29,23 @@ Although b4st was originally intended as a simple starter theme (hence the name 
 * **Navbar with dropdowns (child menus)** – a [custom walker nav menu class](https://github.com/SimonPadbury/b4st/blob/master/functions/navbar.php) has been built to handle the dropdowns.
 
 * Sidebar-widget-area is optional. If no widgets, then the sidebar will not be shown (main column automatically becomes full width).
+
+* **NEW:** action hooks — paired `before` and `after` header, main, (optional sidebar) and footer.
+
+	```
+	b4st_action_header_before();
+	b4st_action_header_after();
+	
+	b4st_action_main_before();
+	
+	b4st_action_sidebar_before();
+	b4st_action_sidebar_after();
+	
+	b4st_action_main_after();
+	
+	b4st_action_footer_before();
+	b4st_action_footer_after();
+	```
 
 * A starter CSS theme – `/theme/css/b4st.css`, enqueued. (Note: do not put your styles in `styles.css`, because that is not enqueued.)
 
