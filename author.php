@@ -11,7 +11,12 @@ if (
     wp_redirect(esc_url( home_url() ) . '/404', 404);
 }
 ?>
-<?php get_header(); ?>
+<?php
+    b4st_action_header_before();
+    get_header(); 
+    b4st_action_header_after();
+    b4st_action_main_before();
+?>
 
 <main class="container mt-5">
   <div class="row">
@@ -33,9 +38,18 @@ if (
       </div><!-- /#content -->
     </div>
 
-    <?php get_sidebar(); ?>
+    <?php 
+      b4st_action_sidebar_before();
+      get_sidebar();
+      b4st_action_sidebar_after();
+    ?>
 
   </div><!-- /.row -->
 </main><!-- /.container -->
 
-<?php get_footer(); ?>
+<?php 
+    b4st_action_main_after();
+    b4st_action_footer_before();
+    get_footer(); 
+    b4st_action_footer_after();
+?>
