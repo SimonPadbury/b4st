@@ -1,14 +1,14 @@
 # b4st – A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 2.4.4*
+*Version 2.5*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
 ------------------
 
-**b4st is a simple WordPress starter theme loaded with Bootstrap 4.**
+**b4st is a simple WordPress starter theme loaded with Bootstrap 4 and Font Awesome 5.**
 
-Although b4st was originally intended as a simple starter theme (hence the name b4st), several people wanted child theme capability so with v2.0 I have made functions 'pluggable'. (It can still be used as a starter theme.)
+_Although b4st was originally intended as a simple starter theme (hence the name b4st), several people wanted child theme capability so I have made functions 'pluggable' and I have added some theme hooks. (However, b4st can still be used as a starter theme.)_
 
 ## Features of b4st
 
@@ -16,42 +16,23 @@ Although b4st was originally intended as a simple starter theme (hence the name 
 
 * Theme CSS and JS, functions and loops are organized into different folders.
 
-* **Bootstrap 4.1.3** (served by `cdnjs.com` CDN) CSS and JS enqueued.
+* **jQuery** and **Modernizr** enqueued (served from the WP core).
 
-* **Popper 1.14.3** (served by `cdnjs.com` CDN) JS enqueued. Popper is needed by Bootstrap popovers, tooltips and collapsed navbar "hamburger" action.
+* **Bootstrap 4.1.3** CSS and JS enqueued (served by `cdnjs.com` CDN).
 
-* **jQuery** enqueued (from the WP core).
+* **Popper 1.14.3** JS enqueued (served by `cdnjs.com` CDN). Popper is needed by Bootstrap popovers, tooltips and collapsed navbar "hamburger" action.
 
-* **Font Awesome 5.4.1** (CSS served by `use.fontawesome.com` CDN) enqueued.
-
-* **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
+* **Font Awesome 5.4.1** enqueued (CSS served by `use.fontawesome.com` CDN).
 
 * **Navbar with dropdowns (child menus)** – a [custom walker nav menu class](https://github.com/SimonPadbury/b4st/blob/master/functions/navbar.php) has been built to handle the dropdowns.
 
-* Sidebar-widget-area is optional. If no widgets, then the sidebar will not be shown (main column automatically becomes full width).
-
-* **NEW:** action hooks — paired `before` and `after` header, main, (optional sidebar) and footer.
-
-	```
-	b4st_action_header_before();
-	b4st_action_header_after();
-	
-	b4st_action_main_before();
-	
-	b4st_action_sidebar_before();
-	b4st_action_sidebar_after();
-	
-	b4st_action_main_after();
-	
-	b4st_action_footer_before();
-	b4st_action_footer_after();
-	```
+* Sidebar-widget-area is optional. If no widgets, then the sidebar will not be shown (and then the main column is automatically full width).
 
 * A starter CSS theme – `/theme/css/b4st.css`, enqueued. (Note: do not put your styles in `styles.css`, because that is not enqueued.)
 
 * WordPress menu and WordPress search form in the Bootstrap 4 `.navbar` (Note: Bootstrap 4 navbar dropdowns supports only two levels of menu links (no sub-sub menus).
 
-* Custom comments and response form
+* Custom comments and response form.
 
 * Bootstrap pagination for:
 
@@ -61,7 +42,11 @@ Although b4st was originally intended as a simple starter theme (hence the name 
 
 * **Visual editor stylesheet** – into which the same Bootstrap 4 CSS, Font Awesome 5 CSS and starter CSS theme are preloaded by `@import`, so that what you see in the visual editor is (mostly!) what you get at the front end (WYSI(M!)WYG). E.g. you will see the theme's typography in the WordPress Post/Page editor, and you can use Bootstrap CSS in the editor – but its width will not be the same as your article column width in the front end.
 
-* Child theme friendly (functions are pluggable).
+* Child theme friendly:
+	* Many functions are pluggable.
+	* **NEW:** theme [hooks]((https://github.com/SimonPadbury/b4st/blob/master/functions/hooks.php)) — paired `before` and `after` navbar, main, (optional sidebar) and footer. Able to recieve [actions](https://developer.wordpress.org/plugins/hooks/actions/) from a child theme.
+	* **NEW:** Navbar brand, navbar search form and sub-footer “bottomline” are built by pluggable hooks. So a child theme can override these.
+	* _Documentation on b4st theme hooks can be found in the [wiki](https://github.com/SimonPadbury/b4st/wiki/b4st-Theme-Hooks)._
 
 * [UNLICENCE](http://unlicense.org) (open source).
 

@@ -10,11 +10,11 @@
 ?>
 
 <?php if( is_active_sidebar('sidebar-widget-area') ): ?>
-<div class="sidebar col-sm-4" id="sidebar" role="navigation">
+<div id="sidebar" class="sidebar col-sm-4" role="navigation">
   <?php
-    b4st_action_sidebar_before();
+    b4st_sidebar_before();
     dynamic_sidebar('sidebar-widget-area');
-    b4st_action_sidebar_after();
+    b4st_sidebar_after();
   ?>
 </div>
 <?php endif; ?>
