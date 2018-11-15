@@ -1,6 +1,6 @@
 # b4st – A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 2.5*
+*Version 2.5.1*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
