@@ -1,14 +1,22 @@
 <?php
-/**!
+/*
  * Setup
  */
 
 if ( ! function_exists('b4st_setup') ) {
 	function b4st_setup() {
-		add_editor_style('theme/css/editor-style.css');
 
+		// Gutenberg
+		add_theme_support( 'wp-block-styles' );
+
+		// b4st cannot support extra-wide blocks
+		//add_theme_support( 'align-wide' );
+
+		add_theme_support( 'editor-styles' );
+		add_editor_style('theme/css/editor.css');
+
+		// Theme
 		add_theme_support('title-tag');
-
 		add_theme_support('post-thumbnails');
 
 		update_option('thumbnail_size_w', 285); /* internal max-width of col-3 */

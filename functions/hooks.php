@@ -1,9 +1,8 @@
 <?php
 /*
-b4st Hooks
-==========
-Designed to be used by a child theme.
-*/
+ * b4st Hooks
+ * Designed to be used by a child theme.
+ */
 
 // Navbar (in `header.php`)
 
@@ -27,10 +26,14 @@ function b4st_navbar_search() {
   if ( ! has_action('navbar_search') ) {
     ?>
     <form class="form-inline ml-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-      <input class="form-control mr-sm-1" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
-      <button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-outline-secondary my-2 my-sm-0">
-        <i class="fas fa-search"></i>
-      </button>
+      <div class="input-group">
+        <input class="form-control border-secondary" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
+        <div class="input-group-append">
+          <button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-outline-secondary my-2 my-sm-0">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
     </form>
     <?php
   } else {

@@ -1,5 +1,5 @@
 <?php
-/**!
+/*
  * Widgets
  */
 
@@ -28,7 +28,7 @@ function b4st_widgets_init() {
   * If 3 widgets, then these will each have third width ...
   * If 4 widgets, then these will each have quarter width ...
   ... above the Bootstrap `sm` breakpoint.
-   */
+  */
 
   register_sidebar( array(
     'name'            => __( 'Footer', 'b4st' ),

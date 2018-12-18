@@ -1,5 +1,5 @@
 <?php
-/**!
+/*
  * Search form in widget
  */
 

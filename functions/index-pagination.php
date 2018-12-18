@@ -1,5 +1,5 @@
 <?php
-/**!
+/*
  * Bootstrap pagination for index and category pages
  */
 

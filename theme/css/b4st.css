@@ -1,4 +1,4 @@
-/**!
+/*
  * b4st CSS
  */
 
@@ -90,8 +90,10 @@ textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
 .comment-meta {
 	margin-bottom: 1rem;
 }
-.commentlist .children {
-	margin-top: 1rem;
-}
 
+.comment > .children {
+	margin-top: 1rem;
+	margin-right: -0.625rem;
+	margin-bottom: -1.625rem;
+}
 /* Site footer */

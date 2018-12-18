@@ -1,5 +1,5 @@
 <?php
-/**!
+/*
  * Navbar walker nav menu
  */
 

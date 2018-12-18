@@ -1,4 +1,4 @@
-/**!
+/*
  * b4st JS
  */
 
@@ -10,7 +10,7 @@
 
 		// Comments
 
-		$('.commentlist li').addClass('card');
+		$('.commentlist li').addClass('card mb-3');
 		$('.comment-reply-link').addClass('btn btn-secondary');
 
 		// Forms

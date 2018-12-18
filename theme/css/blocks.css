@@ -1,0 +1,122 @@
+/*
+ * Gutenberg Blocks Styles
+ * =======================
+ * This file has been copied from: https://github.com/WordPress/gutenberg-starter-theme/blob/master/css/blocks.css
+ */
+
+.entry-content>* {
+  margin: 36px auto;
+  max-width: 636px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.entry-content>.alignwide {
+  max-width: 1100px;
+}
+
+.entry-content>.alignfull {
+  margin: 1.5em 0;
+  max-width: 100%;
+}
+
+.entry-content ul, .entry-content ol {
+  margin: 1.5em auto;
+  max-width: 636px;
+  list-style-position: outside;
+}
+
+.wp-block-video video {
+  max-width: 636px;
+}
+
+.wp-block-image img {
+  display: block;
+}
+
+.wp-block-image.alignleft, .wp-block-image.alignright {
+  width: 100%
+}
+
+.wp-block-image.alignfull img {
+  width: 100vw;
+}
+
+.wp-block-gallery:not(.components-placeholder) {
+  margin: 1.5em auto;
+}
+
+.wp-block-cover-text p {
+  padding: 1.5em 14px;
+}
+
+ul.wp-block-latest-posts.alignwide, ul.wp-block-latest-posts.alignfull, ul.wp-block-latest-posts.is-grid.alignwide, ul.wp-block-latest-posts.is-grid.alignwide {
+  padding: 0 14px;
+}
+
+.wp-block-table {
+  display: block;
+  overflow-x: auto;
+}
+
+.wp-block-table table {
+  border-collapse: collapse;
+  width: 100%
+}
+
+.wp-block-table td, .wp-block-table th {
+  padding: .5em;
+}
+
+.entry-content li {
+  margin-left: 2.5em;
+  margin-bottom: 6px;
+}
+
+.entry-content ul ul, .entry-content ol ol, .entry-content ul ol, .entry-content ol ul {
+  margin: 0 auto;
+}
+
+.entry-content ul ul li, .entry-content ol ol li, .entry-content ul ol li, .entry-content ol ul li {
+  margin-left: 0;
+}
+
+.wp-block-embed.type-video>.wp-block-embed__wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.wp-block-embed.type-video>.wp-block-embed__wrapper>iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.wp-block-quote.is-large {
+  margin: 0 auto 16px;
+}
+
+.wp-block-pullquote>p:first-child {
+  margin-top: 0;
+}
+
+.wp-block-separator {
+  margin: 3em auto;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .wp-block-cover-text p {
+    padding: 1.5em 0;
+  }
+  .entry-content>* {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

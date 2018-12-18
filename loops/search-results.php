@@ -1,5 +1,5 @@
 <?php
-/**!
+/*
  * The Search Results Loop
  */
 ?>
@@ -9,10 +9,12 @@
     <header>
       <h2><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h2>
     </header>
-    <?php the_excerpt(); ?>
+    <section>
+      <?php the_excerpt(); ?>
+    </section>
   </article>
 <?php endwhile; else: ?>
-  <div class="alert alert-warning">
+  <article class="alert alert-warning">
     <i class="fas fa-exclamation-triangle"></i> <?php _e('Sorry, your search yielded no results.', 'b4st'); ?>
-  </div>
+  </article>
 <?php endif; ?>

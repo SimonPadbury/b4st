@@ -1,6 +1,7 @@
 <?php
-/**!
+/*
  * Custom Feedback
+ * ===============
  * https://codex.wordpress.org/Function_Reference/wp_list_comments#Comments_Only_With_A_Custom_Comment_Display
 */
 
@@ -43,11 +44,11 @@ function b4st_comment($comment, $args, $depth) {
           <?php comment_reply_link( array_merge( $args, array(
               'add_below' => $add_below,
               'reply_text' => __('<i class="fas fa-reply"></i> Reply', 'textdomain'),
-              'depth' => $depth, 
+              'depth' => $depth,
               'max_depth' => $args['max_depth']
               ))
           ); ?>
-          <?php edit_comment_link('<span class="btn btn-info">' . __('<i class="fas fa-edit"></i> Edit this reply', 'b4st') . '</span>',' ','' ); ?> 
+          <?php edit_comment_link('<span class="btn btn-info">' . __('<i class="fas fa-edit"></i> Edit this reply', 'b4st') . '</span>',' ','' ); ?>
       </p>
   </div>
 
@@ -110,7 +111,7 @@ if (have_comments()) : ?>
 <?php
   else :
 	  if (comments_open()) :
-  echo '<p class="alert alert-info">' . __('Be the first to write a comment.', 'b4st') . '</p>';
+  echo '<p class="alert alert-info mt-5">' . __('Be the first to write a comment.', 'b4st') . '</p>';
 		else :
 			echo '<p class="alert alert-warning">' . __('Comments are closed for this post.', 'b4st') . '</p>';
 		endif;
@@ -126,7 +127,7 @@ if (have_comments()) : ?>
   <p><?php printf(__('You must be <a href="%s">logged in</a> to post a comment.', 'b4st'), wp_login_url(get_permalink())); ?></p>
   <?php else : ?>
 
-  <form action="<?php echo get_option('url'); ?>/wp-comments-post.php" method="post" id="commentform">
+  <form action="<?php echo site_url('/wp-comments-post.php') ?>" method="post" id="commentform">
 
     <?php if (is_user_logged_in()) : ?>
     <p>

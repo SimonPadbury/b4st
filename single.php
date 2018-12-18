@@ -1,5 +1,5 @@
 <?php
-    get_header(); 
+    get_header();
     b4st_main_before();
 ?>
 
@@ -17,7 +17,7 @@
   </div><!-- /.row -->
 </main><!-- /.container -->
 
-<?php 
+<?php
     b4st_main_after();
-    get_footer(); 
+    get_footer();
 ?>
