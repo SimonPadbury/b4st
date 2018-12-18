@@ -6,7 +6,7 @@
 
 ------------------
 
-**b4st is a simple WordPress starter theme loaded with Bootstrap 4 and Font Awesome 5.**
+**b4st is a simple, Gutenberg-compatible WordPress starter theme loaded with Bootstrap 4 and Font Awesome 5.**
 
 ## Basic features
 
