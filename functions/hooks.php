@@ -29,7 +29,7 @@ function b4st_navbar_search() {
       <div class="input-group">
         <input class="form-control border-secondary" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
         <div class="input-group-append">
-          <button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-outline-secondary my-2 my-sm-0">
+          <button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-outline-secondary">
             <i class="fas fa-search"></i>
           </button>
         </div>
