@@ -16,7 +16,7 @@ if ( ! function_exists('b4st_cleanup_head') ) {
     remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
     remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
     remove_action('wp_head', 'print_emoji_detection_script', 7);
-	  remove_action('wp_print_styles', 'print_emoji_styles');
+    remove_action('wp_print_styles', 'print_emoji_styles');
   }
 }
 add_action('init', 'b4st_cleanup_head');
@@ -26,7 +26,7 @@ add_action('init', 'b4st_cleanup_head');
 
 if ( ! function_exists('show_less_login_info') ) {
   function show_less_login_info() {
-      return "<strong>ERROR</strong>: Stop guessing!";
+    return "<strong>ERROR</strong>: Stop guessing!";
   }
 }
 add_filter( 'login_errors', 'show_less_login_info' );
@@ -43,9 +43,10 @@ add_filter( 'the_generator', 'no_generator' );
 // Remove Query Strings From Static Resources
 
 if ( ! function_exists('b4st_remove_script_version') ) {
-  function b4st_remove_script_version( $src ) {
-    $parts = explode( '?', $src );
-    return $parts[0];
+  if ( current_user_can('manage_options') ) return $src;
+    if( strpos( $src, '?ver=' ) )
+      $src = remove_query_arg( 'ver', $src );
+    return $src;
   }
 }
 add_filter( 'script_loader_src', 'b4st_remove_script_version', 15, 1 );
