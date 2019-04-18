@@ -42,14 +42,14 @@ add_filter( 'the_generator', 'no_generator' );
 
 // Remove Query Strings From Static Resources
 
-if ( ! function_exists( 'b4st_remove_script_version' ) ) {
+if ( ! function_exists('b4st_remove_script_version') ) {
   function b4st_remove_script_version( $src ) {
     if ( current_user_can('manage_options') ) {
       return $src;
-      if( strpos( $src, '?ver=' ) ) {
-        $src = remove_query_arg( 'ver', $src );
-        return $src;
-      }
+    }
+    if( strpos( $src, '?ver=' ) ) {
+      $src = remove_query_arg( 'ver', $src );
+      return $src;
     }
   }
 }
