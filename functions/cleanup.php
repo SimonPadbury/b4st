@@ -42,7 +42,7 @@ add_filter( 'the_generator', 'no_generator' );
 
 // Remove Query Strings From Static Resources
 
-if ( ! function_exists('b4st_remove_script_version') ) {
+/*if ( ! function_exists('b4st_remove_script_version') ) {
   function b4st_remove_script_version( $src ) {
     if ( current_user_can('manage_options') ) {
       return $src;
@@ -54,4 +54,4 @@ if ( ! function_exists('b4st_remove_script_version') ) {
   }
 }
 add_filter( 'script_loader_src', 'b4st_remove_script_version', 15, 1 );
-add_filter( 'style_loader_src', 'b4st_remove_script_version', 15, 1 );
+add_filter( 'style_loader_src', 'b4st_remove_script_version', 15, 1 );*/
