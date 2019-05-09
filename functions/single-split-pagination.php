@@ -8,7 +8,7 @@ function b4st_split_post_pagination($wp_links){
 	global $post;
 
 	$post_base = trailingslashit( get_site_url(null, $post->post_name) );
-	$wp_links = trim(str_replace(array('<p>Pages: ', '</p>'), '', $wp_links));
+	$wp_links = trim(str_replace(array('<p class="post-nav-links">Pages: ', '</p>'), '', $wp_links));
 
 	if ( empty($wp_links) ) {
 		return '';
