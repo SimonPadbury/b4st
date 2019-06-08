@@ -4,84 +4,69 @@
  */
 
 add_filter('wp_link_pages', 'b4st_split_post_pagination');
-function b4st_split_post_pagination($wp_links){
-	global $post;
+function b4st_split_post_pagination($args = ''){
+	$defaults = array(
+		'before' => '<nav aria-label="Page navigation"<ul class="pagination">',
+		'after' => '</ul></nav>',
+		'text_before' => '',
+		'text_after' => '',
+		'link_class' => 'page-link',
+		'next_or_number' => 'number',
+		'nextpagelink' => __( 'Next' ),
+		'previouspagelink' => __( 'Previous' ),
+		'pagelink' => '%',
+		'echo' => 1
+	);
 
-	$post_base = trailingslashit( get_site_url(null, $post->post_name) );
-	$wp_links = trim(str_replace(array('<p class="post-nav-links">Pages: ', '</p>'), '', $wp_links));
+	$r = wp_parse_args( $args, $defaults );
+	$r = apply_filters( 'wp_link_pages_args', $r );
+	extract( $r, EXTR_SKIP );
 
-	if ( empty($wp_links) ) {
-		return '';
-  }
+	global $page, $numpages, $multipage, $more, $pagenow;
 
-	// Split links at spaces
-	$splits = explode(' ', $wp_links );
-	$links = array();
-	$current_page = 1;
+	$output = '';
+	if ( $multipage ) {
+		if ( 'number' == $next_or_number ) {
+			$output .= $before;
 
-	// Loop over split array, correct and rejoin split links
-	foreach( $splits as $key => $split ){
-		if( is_numeric($split) ) {
-			$links[] = $split;
-			$current_page = $split;
-		} else if ( strpos($split, 'href') === false ) {
-			$links[] = $split . ' ' . $splits[$key + 1];
+			// Previous page link
+			$i = $page - 1;
+			if ( $i && $more ) {
+				$output .= '<li class="page-item"><a class="page-link" href="' . get_post_page_url( $i ) . '">';
+				$output .= $text_before . $previouspagelink . $text_after . '</a>';
+			}
+
+			for ( $i = 1; $i < ( $numpages + 1 ); $i = $i + 1 ) {
+				$j = str_replace( '%', $i, $pagelink );
+				$output .= ' ';
+				if ( $i != $page || ( ( ! $more ) && ( $page == 1 ) ) )
+					$output .= '<li class="page-item"><a class="page-link" href="' . get_post_page_url( $i ) . '">';
+				else
+					$output .= '<li class="page-item active"><a class="page-link" href="#">';
+
+				$output .= $text_before . $j . $text_after;
+				if ( $i != $page || ( ( ! $more ) && ( $page == 1 ) ) )
+					$output .= '</li></a>';
+				else
+					$output .= '</li></a>';
+			}
+
+			// Next page link
+			$i = $page + 1;
+			if ( $i <= $numpages && $more ) {
+				$output .= '<li class="page-item"><a class="page-link" href="' . get_post_page_url( $i ) . '">';
+				$output .= $text_before . $nextpagelink . $text_after . '</a>';
+			}
+
+			$output .= $after;
 		}
 	}
 
-	$num_pages = count($links);
-
-	// Start UL
-	$output .= '<ul class="pagination justify-content-center mt-5">';
-
-	// Page status
-	$output .= '<li class="page-item disabled"><a class="page-link">Page ' . $current_page . ' of ' . $num_pages . '</a></li>';
-
-  // Skip to first
-  if ( $current_page == 1 ) {
-		$output .= '<li class="page-item disabled"><a class="page-link">';
-	} else {
-		$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . '">';
-  }
-	$output .= '<i class="fas fa-angle-double-left"></i></a></li>';
-
-  // Prev
-	if ( $current_page == 1 ) {
-		$output .= '<li class="page-item disabled"><a class="page-link">';
-	} else {
-		$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . ($current_page - 1) . '">';
-  }
-	$output .= '<i class="fas fa-angle-left"></i></a></li>';
-
-  // Pagination
-  foreach( $links as $key => $link ) {
-    $temp_key = $key + 1;
-    if ( $current_page == $temp_key ) {
-      $output .= '<li class="page-item active"><a class="page-link" href="' . $post_base . $temp_key . '">' . $temp_key . '</a></li>';
-    } else {
-      $output .= '<li class="page-item"><a class="page-link" href="' . $post_base . $temp_key . '">' . $temp_key . '</a></li>';
-    }
-	}
-
-  // Next
-	if ( $current_page == $num_pages ) {
-		$output .= '<li class="page-item disabled"><a class="page-link">';
-	} else {
-		$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . ($current_page + 1) . '">';
-  }
-	$output .= '<i class="fas fa-angle-right"></i></a></li>';
-
-  // Skip to last
-  if ( $current_page == $num_pages ) {
-		$output .= '<li class="page-item disabled"><a class="page-link">';
-	} else {
-		$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . $num_pages . '">';
-  }
-	$output .= "<i class=\"fas fa-angle-double-right\"></i></a></li>";
-
-  // Close UL
-	$output .= '</ul>';
-
 	return $output;
 }
-add_filter('wp_link_pages', 'b4st_split_post_pagination');
+
+// Extract link from string
+function get_post_page_url( $i ) {
+	if ( preg_match( '/href="([^"]+)"/', _wp_link_page( $i ), $match ) )
+		return $match[1];
+}
