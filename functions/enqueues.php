@@ -25,7 +25,6 @@ if ( ! function_exists('b4st_enqueues') ) {
 		wp_enqueue_script('modernizr');
 
 		wp_register_script('jquery-3.3.1', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, '3.3.1', true);
-  wp_enqueue_script('jquery-3.3.1');
 		wp_enqueue_script('jquery-3.3.1');
 
 		wp_register_script('bootstrap-bundle', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js', false, '4.3.1', true);
