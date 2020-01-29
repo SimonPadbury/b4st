@@ -1,0 +1,39 @@
+// p.has-drop-cap:not(:focus):first-letter { 
+//   // if you edit this, you need to empty your browser cache before refresh
+//   float: left;
+//   font-size: 5.325em;
+//   line-height: .625;
+//   font-weight: 400;
+//   margin: .0875em .0625em 0 0;
+//   text-transform: uppercase;
+//   font-style: normal;
+// }
+
+// CSS lock -- see https://fvsch.com/css-locks/
+
+@media screen and (min-width: 768px) {
+  .entry-header,
+  .entry-content {
+    font-size: calc(1rem + (1.375 - 1) * ((100vw - 768px) / (1200 - 768)));
+    font-weight: 300;
+    line-height: inherit;
+  }
+  .entry-header h1 {
+    font-size: calc(2.5rem + (3.4375 - 2.5) * ((100vw - 768px) / (1200 - 768)));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .entry-header,
+  .entry-content {
+    font-size: 1.375rem;
+  }
+  .entry-header h1 {
+    font-size: 3.4375rem;
+  }
+}
+
+// More link
+
+.more-link {
+  display: block;
+}

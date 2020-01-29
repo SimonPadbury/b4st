@@ -1,0 +1,30 @@
+.wp-block-group > .wp-block-group__inner-container > * {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-block-group > .wp-block-group__inner-container > .alignwide {
+  width: 100vw;
+  max-width: 1100px;
+  margin: 1.5em 0 1.5em 50%;
+  transform: translateX(-50%);
+}
+
+.wp-block-group > .wp-block-group__inner-container > .alignfull {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 1.5em 0 1.5em 50%;
+  transform: translateX(-50%);
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > :first-child {
+  margin-top: 0;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > .alignfull {
+  width: calc( 100% + 60px );
+  max-width: calc( 100% + 60px );
+  position: relative;
+  left: -30px;
+}

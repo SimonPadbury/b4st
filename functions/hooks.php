@@ -51,12 +51,12 @@ function b4st_main_after() {
   do_action('main_after');
 }
 
-// Sidebar (in `sidebar.php` -- only displayed when sidebar has 1 widget or more)
+// Main Widgets
 
-function b4st_sidebar_before() {
+function b4st_main_widgets_before() {
   do_action('sidebar_before');
 }
-function b4st_sidebar_after() {
+function b4st_main_widgets_after() {
   do_action('sidebar_after');
 }
 

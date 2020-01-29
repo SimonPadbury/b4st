@@ -1,12 +1,14 @@
-/*
+/** !
 Theme Name: b4st
 Theme URI: https://github.com/SimonPadbury/b4st
-Description: A simple starter theme for WordPress. Gutenberg compatible. Using Twitter Bootstrap 4 and Font Awesome 5.
+Description: A simple starter theme for WordPress. Gutenberg compatible. Using Bootstrap 4, Font Awesome 5, and Gulp-SASS.
 Author: Simon Padbury
 Author URI: http://simonpadbury.github.io
-Version: 2.7.1
+Version: 3.0
 Tags:
 Text Domain: b4st
 License: Unlicense
 License URI: http://unlicense.org
 */
+
+/* The CSS is all in theme/css/b4st.css  */

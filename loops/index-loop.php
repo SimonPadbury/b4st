@@ -13,14 +13,10 @@
 
   <?php endwhile; ?>
 
-  <?php if ( function_exists('b4st_pagination') ) { b4st_pagination(); } else if ( is_paged() ) { ?>
-  <ul class="pagination">
-    <li class="page-item older">
-      <?php next_posts_link('<i class="fas fa-arrow-left"></i> ' . __('Previous', 'b4st')) ?></li>
-    <li class="page-item newer">
-      <?php previous_posts_link(__('Next', 'b4st') . ' <i class="fas fa-arrow-right"></i>') ?></li>
-  </ul>
-  <?php } ?>
+  <nav class="container border-top pt-2 pb-5">
+    <div class="text-left"><?php next_posts_link('<i class="fas fa-angle-left"></i> Older posts') ?></div>
+    <div class="text-right"><?php previous_posts_link('Newer posts <i class="fas fa-angle-right"></i>') ?></div>
+  </nav>
 
   <?php
   else :

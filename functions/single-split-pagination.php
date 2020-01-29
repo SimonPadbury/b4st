@@ -21,8 +21,6 @@ function b4st_split_post_pagination($args){
 		'text_after' => '',
 		'link_class' => 'page-link',
 		'next_or_number' => 'number',
-		'nextpagelink' => __( 'Next' ),
-		'previouspagelink' => __( 'Previous' ),
 		'pagelink' => '%',
 		'echo' => 1
 	);
@@ -37,22 +35,6 @@ function b4st_split_post_pagination($args){
 
 			// Page status
 			$output .= '<li class="page-item disabled"><a class="page-link">Page ' . $page . ' of ' . $numpages . '</a></li>';
-
-			// Skip to first
-			if ( $page == 1 ) {
-				$output .= '<li class="page-item disabled"><a class="page-link">';
-			} else {
-				$output .= '<li class="page-item"><a class="page-link" href="' . $postbase . '">';
-			}
-			$output .= '<i class="fas fa-angle-double-left"></i></a></li>';
-
-			// Previous page link
-			if ( $page == 1 ) {
-				$output .= '<li class="page-item disabled"><a class="page-link">';
-			} else {
-				$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . ($page - 1) . '">';
-			}
-			$output .= '<i class="fas fa-angle-left"></i></a></li>';
 
 			// Page numbering
 			for ( $i = 1; $i < ( $numpages + 1 ); $i = $i + 1 ) {
@@ -69,22 +51,6 @@ function b4st_split_post_pagination($args){
 					$output .= '</li></a>';
 			}
 			
-			// Next page link
-			if ( $page == $numpages ) {
-				$output .= '<li class="page-item disabled"><a class="page-link">';
-			} else {
-				$output .= '<li class="page-item"><a class="page-link" href="' . $postbase . ($page + 1) . '">';
-			}
-			$output .= '<i class="fas fa-angle-right"></i></a></li>';
-			
-			// Skip to last
-			if ( $page == $numpages ) {
-				$output .= '<li class="page-item disabled"><a class="page-link">';
-			} else {
-				$output .= '<li class="page-item"><a class="page-link" href="' . $postbase . $numpages . '">';
-			}
-			$output .= "<i class=\"fas fa-angle-double-right\"></i></a></li>";
-
 			// Finalize
 			$output .= $after;
 		}

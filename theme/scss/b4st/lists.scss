@@ -1,0 +1,24 @@
+.entry-content ul:not(.blocks-gallery-grid),
+.entry-content ol {
+  margin: 0 auto 1.5em auto;
+  max-width: 720px;
+  list-style-position: outside;
+}
+
+.entry-content li {
+  margin-left: 2.5em;
+}
+
+.entry-content ul ul,
+.entry-content ol ol,
+.entry-content ul ol,
+.entry-content ol ul {
+  margin: 0 auto;
+}
+
+.entry-content ul ul li,
+.entry-content ol ol li,
+.entry-content ul ol li,
+.entry-content ol ul li {
+  margin-left: 0;
+}

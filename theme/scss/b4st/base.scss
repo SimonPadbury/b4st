@@ -1,0 +1,76 @@
+
+
+.author-bio,
+.comments-wrap {
+  margin: 36px auto;
+  max-width: 720px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.site-header-image {
+  display: block;
+  margin: auto;
+}
+
+.wp-caption {}
+.wp-caption-text {}
+.sticky {}
+.screen-reader-text {}
+.gallery-caption {}
+
+.bypostauthor {}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+}
+
+/* Author bio */
+
+.author-bio .avatar {
+  border: 1px solid #dee2e6;
+  border-radius: 50%;
+}
+
+/* Main content */
+
+/* Sidebar */
+
+
+
+/***********************/
+
+/*--------------------------------------------------------------
+## Cover
+--------------------------------------------------------------*/
+
+.wp-block-cover-text p {
+  padding: 1.5em 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .wp-block-cover-text p {
+    padding: 1.5em 0;
+  }
+}
+
+/*--------------------------------------------------------------
+## Latest Posts
+--------------------------------------------------------------*/
+
+ul.wp-block-latest-posts.alignwide,
+ul.wp-block-latest-posts.alignfull,
+ul.wp-block-latest-posts.is-grid.alignwide,
+ul.wp-block-latest-posts.is-grid.alignwide {
+  padding: 0 16px;
+}
+

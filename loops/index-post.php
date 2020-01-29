@@ -6,7 +6,8 @@
  */
 ?>
 
-<article role="article" id="post_<?php the_ID()?>" <?php post_class("mb-5"); ?> >
+
+<article role="article" id="post_<?php the_ID()?>" <?php post_class("entry-content pb-3 border-bottom mb-5"); ?> >
   <header>
     <h2>
       <a href="<?php the_permalink(); ?>">

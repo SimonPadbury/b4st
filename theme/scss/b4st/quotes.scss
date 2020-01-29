@@ -1,0 +1,45 @@
+// Block quotes
+
+.wp-block-quote {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 0;
+}
+
+.wp-block-quote > * {
+  margin-left: 1rem;
+}
+
+.wp-block-quote.is-large, 
+.wp-block-quote.is-style-large {
+  margin: 36px auto;
+  padding: 0;
+}
+
+.wp-block-quote.is-large cite, 
+.wp-block-quote.is-large footer, 
+.wp-block-quote.is-style-large cite, 
+.wp-block-quote.is-style-large footer {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+@media screen and (min-width: 768px) {
+  .wp-block-quote {
+    margin: 48px auto;
+  }
+}
+
+// Pull quotes
+
+.wp-block-pullquote>p:first-child {
+  margin-top: 0;
+}
+
+.wp-block-pullquote.alignright {
+  margin-left: 2rem;
+}
+
+.wp-block-pullquote.alignleft {
+  margin-right: 2rem;
+}

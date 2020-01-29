@@ -6,18 +6,45 @@
 if ( ! function_exists('b4st_setup') ) {
 	function b4st_setup() {
 
-		// Gutenberg
-		add_theme_support( 'wp-block-styles' );
-
-		// b4st cannot support extra-wide blocks
-		//add_theme_support( 'align-wide' );
-
 		add_theme_support( 'editor-styles' );
 		add_editor_style('theme/css/editor.css');
 
-		// Theme
+		// Gutenberg Blocks
+		add_theme_support( 'wp-block-styles' );
+		add_theme_support( 'align-wide' );
+		
 		add_theme_support('title-tag');
 		add_theme_support('post-thumbnails');
+
+		add_theme_support(
+			'editor-font-sizes',
+			array(
+				array(
+					'name'      => __( 'Small', 'b4st' ),
+					'shortName' => __( 'S', 'b4st' ),
+					'size'      => 14,
+					'slug'      => 'small',
+				),
+				array(
+					'name'      => __( 'Normal', 'b4st' ),
+					'shortName' => __( 'M', 'b4st' ),
+					'size'      => 16,
+					'slug'      => 'normal',
+				),
+				array(
+					'name'      => __( 'Large', 'b4st' ),
+					'shortName' => __( 'L', 'b4st' ),
+					'size'      => 22,
+					'slug'      => 'large',
+				),
+				array(
+					'name'      => __( 'Huge', 'b4st' ),
+					'shortName' => __( 'XL', 'b4st' ),
+					'size'      => 28,
+					'slug'      => 'huge',
+				),
+			)
+		);
 
 		update_option('thumbnail_size_w', 285); /* internal max-width of col-3 */
 		update_option('small_size_w', 350); /* internal max-width of col-4 */

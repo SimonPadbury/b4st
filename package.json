@@ -1,0 +1,32 @@
+{
+  "name": "b4st",
+  "version": "1.0.0",
+  "description": "*Version 2.7.1*",
+  "repository": {
+    "url": "https://github.com/SimonPadbury/b4st"
+  },
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "WordPress",
+    "Theme",
+    "Bootstrap 4",
+    "Font Awesome 5",
+    "Gulp",
+    "Sass",
+    "SCSS"
+  ],
+  "author": "Simon Padbury",
+  "license": "Unlicense"
+}
