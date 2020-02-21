@@ -1,6 +1,6 @@
 # b4st – A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 3.0*
+*Version 3.01*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -32,7 +32,7 @@
 
 * Served from a CDN:
     * Modernizr 2.8.3
-    * jQuery 3.4.1
+    * jQuery 3.4.1 (full, not slim version)
     * Popper 1.14.7 (needed by Bootstrap popovers, tooltips and collapsed navbar “hamburger” action)
     * Bootstrap 4.4.1 CSS
     * Bootstrap 4.4.1 JS
