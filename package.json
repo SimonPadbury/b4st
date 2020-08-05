@@ -1,18 +1,18 @@
 {
   "name": "b4st",
-  "version": "1.0.0",
-  "description": "*Version 2.7.1*",
+  "version": "3.1",
+  "description": "Gulp-SASS and other dependencies for b4st, a WordPress starter theme with Bootstrap 4 and Font Awesome 5.",
   "repository": {
     "url": "https://github.com/SimonPadbury/b4st"
   },
   "main": "",
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.8.6",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5"
   },
   "scripts": {

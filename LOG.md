@@ -1,5 +1,13 @@
 # Log
 
+## Changes for 5 August 2020 -- version 3.1
+
+* _New:_ added the `tag.php` template.
+
+* Updated Bootstrap and Popper to latest versions (see `functions/enqueues.php`).
+
+* Updated NPM dependancies to latest versions (see `package.json`).
+
 ## Changes for 29 January 2020 -- version 3.0
 
 * Adding SCSS preprocessing (and sourcemaps) using Gulp-Sass.

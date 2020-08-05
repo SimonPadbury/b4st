@@ -1,6 +1,6 @@
 # b4st – A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 3.01*
+*Version 3.1*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -30,15 +30,15 @@
 
 * WordPress.
 
-* Served from a CDN:
+* Served from CDN’s:
     * Modernizr 2.8.3
-    * jQuery 3.4.1 (full, not slim version)
-    * Popper 1.14.7 (needed by Bootstrap popovers, tooltips and collapsed navbar “hamburger” action)
-    * Bootstrap 4.4.1 CSS
-    * Bootstrap 4.4.1 JS
-    * Font Awesome 5.11.2
+    * jQuery 3.5.1 (full, not slim version)
+    * Popper 1.16.1 (needed by Bootstrap popovers, tooltips and collapsed navbar “hamburger” action)
+    * Bootstrap 4.5.1 CSS
+    * Bootstrap 4.5.1 JS
+    * Font Awesome 5.14.0
 
-* **Optional (if you want to Gulp-Sass for preprocessing the SCSS files):**
+* **Optional** (install these if you want to Gulp-Sass for preprocessing the SCSS files):
     * NodeJS
     * Gulp-CLI – installed globally
     * Node packages for the following devDependencies:
@@ -105,7 +105,7 @@ gulp
 
 That’s it.
 
-You can stop it by typing `ctrl+C` (hold the **control** key down and press the **c** key).
+You can stop Gulp by typing `ctrl+C` (hold the **control** key down and press the **c** key).
 
 5. So, in development, you could have WordPress running on a local server (e.g. BitNami-WordPress, AMPPS, Local by Flywheel, or MAMP + WordPress), and this Gulp setup watching and processing your SCSS into CSS.
     * You may sometimes need to purge your browser cache at the start of a dev/design session, so that it reloads your newer stylesheet.
