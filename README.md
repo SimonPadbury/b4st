@@ -6,6 +6,10 @@
 
 ------------------
 
+Interested in **Bootstrap 5**? Then go for https://github.com/SimonPadbury/b5st
+
+------------------
+
 > b4st is a simple, Gutenberg-compatible WordPress starter theme loaded with Bootstrap 4 and Font Awesome 5 — using Gulp for preprocessing its SCSS into CSS.
 
 ## Basic features
